@@ -1,0 +1,66 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="20.142822265625" scrolly="0" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="58.55618133544931" scrolly="-357.07138595581046" scale="0.9">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="V+}qttxPN4mX[2-f)EV7">Fridges</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="C^o1vG9pxA1O)3HEZrI@" x="-10" y="450">
+      <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="2_LQ=86MPERz^F[kNjX6">
+          <mutation items="3"></mutation>
+          <value name="ADD0">
+            <block type="objectList" id="h[mgt|m07k#Vi?Ctc%qd">
+              <field name="FIELDNAME">lodowka1</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="D#f?DQfWvadcK2+tMlkG">
+              <field name="FIELDNAME">lodowka2</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="objectList" id="?=~OZ]J+[+wlrRHhx|#}">
+              <field name="FIELDNAME">lodowka3</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="hide" id="[@j93*Ey7UDvu%d(cy_f">
+          <value name="VALUE">
+            <shadow type="objectList" id="ab!4EpFB|O7JC7*[;uVB">
+              <field name="FIELDNAME">lodowka2</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="hide" id="T=,]oio}1+(SOFB^|cJs">
+              <value name="VALUE">
+                <shadow type="objectList" id="lt1Gwm_`CHQgGfO67tbt">
+                  <field name="FIELDNAME">lodowka3</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="hide" id="a/m,n7gR^g}hkg)vJ8Km">
+                  <value name="VALUE">
+                    <shadow type="objectList" id=":*)86Yw~6wFgYffkhI#2">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="console.log" id="7`Qa{t$EpOJ!+Kz}nz!l" x="388" y="757">
+      <value name="VALUE">
+        <shadow type="text" id="6_5{^(zKNUxXYyck0HLc">
+          <field name="TEXT">This is a Vue app!</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="151.15997314453125" viewport-y="2.239999771118164" viewport-w="878" viewport-h="546" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

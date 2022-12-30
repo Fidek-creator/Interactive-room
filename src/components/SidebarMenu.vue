@@ -18,36 +18,57 @@ const rooms= ref([
       
       <hr class="h-1 bg-gray-300 rounded border-0 ">
 
-      <div class="text-center text-xl font-semibold cursor-default text-gray-400 ">
-            <p class="hover:bg-slate-500 rounded-full p-4">
+      <div class="text-center text-xl font-semibold cursor-pointer text-gray-400">
+            <p class="hover:bg-blue-700 rounded-full p-4">
                Kuchnia
             </p>
             
             <hr class="h-1 bg-gray-300 rounded border-0">
             
-            <p class="hover:bg-slate-500 rounded-full p-4">
+            <p class="hover:hover:bg-blue-700 rounded-full p-4">
                Salon
             </p>
       </div>
 
 
-      <div class="py-4 px-3rounded flex flex-col text-center text-gray-400 text-xl">
+      <div class="py-4 px-3rounded flex flex-col text-center text-gray-400 text-xl ">
          
          <p>
-            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800  focus:outline-none font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 animate-bounce">
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
                 </svg>
              </button>
-            Lodówka
-            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-                </svg>
+             
+             <span class="text-center cursor-default px-2 animate-bounce">Lodówka</span>
+             
+            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800  focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 animate-bounce">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                   </svg>
              </button>
          </p>
       
       </div>
+
+      <div class="bg-slate-700 text-gray-400">
+         
+         <label for="default-range" class="block mb-2 text-sm font-medium text-gray-400">Wysokość</label>
+         <input id="default-range" type="range" value="50" class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer">
+         
+         <label for="default-range" class="block mb-2 text-sm font-medium text-gray-400">Szerokość</label>
+         <input id="default-range" type="range" value="50" class="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer">
+
+         <p class="my-2 text-sm font-medium">Kolor</p>
+         
+         <div class="flex justify-center">
+            <div><button type="button" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"></button></div>
+            <div><button type="button" class=" focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"></button></div>
+            <div><button type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"></button></div>
+          </div>
+      </div>
+
+     
    </div>
    
    

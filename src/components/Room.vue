@@ -1,6 +1,7 @@
 <script setup>
-  const emit = defineEmits(['update:modelValue']);
+  import Furniture from './Furniture.vue';
 
+const emit = defineEmits(['update:modelValue']);
   const props = defineProps({
     room: {
       type: Object,
@@ -20,7 +21,8 @@
       {{ props.room.name == modelValue ? 'Wstecz' : props.room.name }}
     </p>
 
-    this room has {{ props.room.furnitures.length }} furnitures VM: {{ props.modelValue }}
+    <Furniture v-show="props.room.name == modelValue" v-for="furniture in props.room.furnitures" :key="furniture.name" :furniture="furniture" v-model="props.modelValue" />
+
     <hr class="h-1 bg-gray-300 rounded border-0" />
   </section>
 </template>

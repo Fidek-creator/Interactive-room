@@ -8,26 +8,58 @@
       furnitures: [
         {
           name: 'Lodówka',
-          props: [
-            { name: 'Wysokość', type: 'range', value: 50 },
-            { name: 'Szerokość', type: 'range', value: 50 },
-            { name: 'Kolor', type: 'color', value: 'red' },
+          variant: [
+            {
+              id: 0,
+              props: [
+                {
+                  name: 'Wysokość',
+                  type: 'range',
+                  value: 50,
+                },
+                {
+                  name: 'Szerokość',
+                  type: 'range',
+                  value: 50,
+                },
+                {
+                  name: 'Kolor',
+                  type: 'color',
+                  value: 'red',
+                }
+              ]
+            },
+            {
+              id: 1,
+            }
           ],
         },
         {
-          name: 'Cabinets',
-          props: [
-            { name: 'Wysokość', type: 'range', value: 50 },
-            { name: 'Szerokość', type: 'range', value: 50 },
-            { name: 'Kolor', type: 'color', value: 'red' },
-          ],
-        },
-        {
-          name: 'Sinks',
-          props: [
-            { name: 'Wysokość', type: 'range', value: 50 },
-            { name: 'Szerokość', type: 'range', value: 50 },
-            { name: 'Kolor', type: 'color', value: 'red' },
+          name: 'Piekarnik',
+          variant: [
+            {
+              id: 0,
+              props: [
+                {
+                  name: 'Wysokość',
+                  type: 'range',
+                  value: 50,
+                },
+                {
+                  name: 'Szerokość',
+                  type: 'range',
+                  value: 50,
+                },
+                {
+                  name: 'Kolor',
+                  type: 'color',
+                  value: 'red',
+                }
+              ]
+            },
+            {
+              id: 1,
+            }
           ],
         },
       ],
@@ -57,7 +89,7 @@
     <a class="items-center pl-2.5 mb-5">
       <span
         class="self-center text-xl text-center font-semibold whitespace-nowrap cursor-default text-gray-400">
-        <p>Aplikacja wspierajaca<br />prace projektantów</p>
+        <p>Aplikacja wspierająca<br />prace projektantów</p>
       </span>
     </a>
 
@@ -70,6 +102,8 @@
       <Room v-model="selectedRoom" :room="room" />
     </div>
   </div>
+
+
 </template>
 
 <style></style>

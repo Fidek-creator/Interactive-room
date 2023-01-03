@@ -59,4 +59,3 @@
     </p>
   </div>
 </template>
-#Kuchnia.Lodówka.next

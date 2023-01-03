@@ -4,9 +4,9 @@ import SidebarMenu from './components/SidebarMenu.vue';
 </script>
 
 <template>
-  <div class="apps-container">
-    <!-- <V3DApp /> -->
+  <div class="flex apps-container">
     <SidebarMenu />
+    <V3DApp class="z-30"/>
   </div>
 </template>
 

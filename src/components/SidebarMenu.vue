@@ -1,5 +1,4 @@
 <script setup>
-  import { list } from 'postcss';
   import { ref } from 'vue';
 
   const rooms = ref([
@@ -32,7 +31,7 @@
         },
       ],
     },
-    
+
     {
       name: 'Salon',
       furnitures: [
@@ -45,10 +44,10 @@
           ],
         },
       ],
-    }
+    },
   ]);
 
-   const selectedRoom = room.name;
+  const selectedRoom = ref('');
 </script>
 
 <template>
@@ -62,14 +61,25 @@
 
     <hr class="h-1 bg-gray-300 rounded border-0" />
 
-    <div v-for="room in rooms" :key="room.name" class="text-center text-xl font-semibold text-gray-400">
-      <p v-show= "selectedRoom=='' || selectedRoom==room.name"
-       @click="selectedRoom=room.value" 
+    <div
+      v-for="room in rooms"
+      :key="room.name"
+      class="text-center text-xl font-semibold text-gray-400">
+      <p
+        v-show="selectedRoom == '' || selectedRoom == room.name"
+        @click="selectedRoom = room.name"
+
+
         class="hover:bg-blue-700 rounded-full p-4 hover:text-gray-300 hover:scale-75 cursor-pointer">
         {{ room.name }}
       </p>
       <hr class="h-1 bg-gray-300 rounded border-0" />
-   </div>
+    </div>
+
+SL: {{ selectedRoom }}
+
+
+
   </div>
 </template>
 

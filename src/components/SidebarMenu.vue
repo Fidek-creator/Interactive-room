@@ -1,5 +1,6 @@
 <script setup>
   import { ref } from 'vue';
+  import Room from './Room.vue';
 
   const rooms = ref([
     {
@@ -65,14 +66,11 @@
       v-for="room in rooms"
       :key="room.name"
       class="text-center text-xl font-semibold text-gray-400">
-      <div v-show="selectedRoom == '' || selectedRoom == room.name">
-        <p
-          @click="room.name == selectedRoom ? (selectedRoom = '') : (selectedRoom = room.name)"
-          class="hover:bg-blue-700 rounded-full p-4 hover:text-gray-300 hover:scale-75 cursor-pointer">
-          {{ room.name == selectedRoom ? 'Wstecz' : room.name }}
-        </p>
-        <hr class="h-1 bg-gray-300 rounded border-0" />
-      </div>
+      <Room
+        v-show="selectedRoom == '' || selectedRoom == room.name"
+        @click="room.name == selectedRoom ? (selectedRoom = '') : (selectedRoom = room.name)"
+        :room="room"
+        :selected="selectedRoom" />
     </div>
   </div>
 </template>

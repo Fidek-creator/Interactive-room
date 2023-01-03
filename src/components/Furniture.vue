@@ -8,13 +8,20 @@
       type: String,
       required: false,
     },
+    room: {
+      type: String,
+      required: true,
+    },
   });
 </script>
 <template>
   <div class="py-4 px-3 flex flex-col text-center text-gray-400 text-xl font-semibold">
     <p>
       <button
-        class="transition ease-in-out delay-150 text-white bg-blue-500 hover:scale-110 hover:bg-blue-700 duration-300 rounded-full p-2">
+      class="transition ease-in-out delay-150 text-white bg-blue-500 hover:scale-110 hover:bg-blue-700 duration-300 rounded-full p-2"
+      :id="`${props.room.name}.${props.furniture.name}.prev`"
+      
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -32,7 +39,10 @@
       <span class="text-center cursor-default p-2">{{props.furniture.name}} </span>
 
       <button
-        class="transition ease-in-out delay-150 text-white bg-blue-500 hover:scale-110 hover:bg-blue-700 duration-300 rounded-full p-2">
+        class="transition ease-in-out delay-150 text-white bg-blue-500 hover:scale-110 hover:bg-blue-700 duration-300 rounded-full p-2"
+        :id="`${props.room.name}.${props.furniture.name}.next`"
+        >
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -49,3 +59,4 @@
     </p>
   </div>
 </template>
+#Kuchnia.Lodówka.next

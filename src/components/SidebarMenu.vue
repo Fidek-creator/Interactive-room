@@ -48,6 +48,7 @@
     },
   ]);
 
+  const a = ref(1);
   const selectedRoom = ref('');
 </script>
 
@@ -66,11 +67,7 @@
       v-for="room in rooms"
       :key="room.name"
       class="text-center text-xl font-semibold text-gray-400">
-      <Room
-        v-show="selectedRoom == '' || selectedRoom == room.name"
-        @click="room.name == selectedRoom ? (selectedRoom = '') : (selectedRoom = room.name)"
-        :room="room"
-        :selected="selectedRoom" />
+      <Room v-model="selectedRoom" :room="room" />
     </div>
   </div>
 </template>

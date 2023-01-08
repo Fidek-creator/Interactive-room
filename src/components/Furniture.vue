@@ -1,4 +1,6 @@
 <script setup>
+  import { ref, computed, onMounted } from 'vue';
+  import FurnitureProps from './FurnitureProps.vue';
   const props = defineProps({
     furniture: {
       type: Array,
@@ -13,15 +15,32 @@
       required: true,
     },
   });
+
+  const furnitureId = ref(0);
+  const changeId = (changeAmount) => {
+    furnitureId.value += changeAmount;
+    if (furnitureId.value < 0) {
+      furnitureId.value = props.furniture.variant.length - 1;
+    } else if (furnitureId.value >= props.furniture.variant.length) {
+      furnitureId.value = 0;
+    }
+  };
+
+  const hasProps = computed(() => {
+    return Boolean(props.furniture.variant && props.furniture.variant[furnitureId.value].props);
+  });
+  const furnitureProps = computed(() => {
+    if (!hasProps.value) return;
+    return props.furniture.variant[furnitureId.value].props;
+  });
 </script>
 <template>
   <div class="py-4 px-3 flex flex-col text-center text-gray-400 text-xl font-semibold">
     <p>
       <button
-      class="transition ease-in-out delay-150 text-white bg-blue-500 hover:scale-110 hover:bg-blue-700 duration-300 rounded-full p-2"
-      :id="`${props.room.name}.${props.furniture.name}.prev`"
-      
-      >
+        @click="changeId(-1)"
+        class="transition ease-in-out delay-150 text-white bg-blue-500 hover:scale-110 hover:bg-blue-700 duration-300 rounded-full p-2"
+        :id="`${props.room.name}.${props.furniture.name}.prev`">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -36,13 +55,12 @@
         </svg>
       </button>
 
-      <span class="text-center cursor-default p-2">{{props.furniture.name}} </span>
+      <span class="text-center cursor-default p-2">{{ props.furniture.name }} </span>
 
       <button
+        @click="changeId(1)"
         class="transition ease-in-out delay-150 text-white bg-blue-500 hover:scale-110 hover:bg-blue-700 duration-300 rounded-full p-2"
-        :id="`${props.room.name}.${props.furniture.name}.next`"
-        >
-
+        :id="`${props.room.name}.${props.furniture.name}.next`">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -57,5 +75,8 @@
         </svg>
       </button>
     </p>
+    <FurnitureProps
+      :furnitureProps="furnitureProps"
+      :IdPrefix="`${props.room.name}-${props.furniture.name}-${furnitureId}-`" />
   </div>
 </template>

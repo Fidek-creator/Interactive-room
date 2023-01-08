@@ -2,7 +2,7 @@
   import { ref } from 'vue';
   import Room from './Room.vue';
 
-  const rooms = ref([
+  const rooms = [
     {
       name: 'Kuchnia',
       furnitures: [
@@ -15,17 +15,19 @@
                 {
                   name: 'Wysokość',
                   type: 'range',
-                  value: 50,
-                },
-                {
-                  name: 'Szerokość',
-                  type: 'range',
+                  min: 0,
+                  max: 100,
                   value: 50,
                 },
                 {
                   name: 'Kolor',
                   type: 'color',
                   value: 'red',
+                  values: [
+                    "#9494FF",
+                    "#D0D0D0",
+                    "#E4A010",
+                  ]
                 }
               ]
             },
@@ -39,23 +41,6 @@
           variant: [
             {
               id: 0,
-              props: [
-                {
-                  name: 'Wysokość',
-                  type: 'range',
-                  value: 50,
-                },
-                {
-                  name: 'Szerokość',
-                  type: 'range',
-                  value: 50,
-                },
-                {
-                  name: 'Kolor',
-                  type: 'color',
-                  value: 'red',
-                }
-              ]
             },
             {
               id: 1,
@@ -64,21 +49,7 @@
         },
       ],
     },
-
-    {
-      name: 'Salon',
-      furnitures: [
-        {
-          name: 'Sofa',
-          props: [
-            { name: 'Wysokość', type: 'range', value: 50 },
-            { name: 'Szerokość', type: 'range', value: 50 },
-            { name: 'Kolor', type: 'color', value: 'red' },
-          ],
-        },
-      ],
-    },
-  ]);
+  ];
 
   const a = ref(1);
   const selectedRoom = ref('');

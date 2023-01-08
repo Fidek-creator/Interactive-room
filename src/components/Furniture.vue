@@ -3,7 +3,7 @@
   import FurnitureProps from './FurnitureProps.vue';
   const props = defineProps({
     furniture: {
-      type: Array,
+      type: Object,
       required: true,
     },
     modelValue: {
@@ -11,7 +11,7 @@
       required: false,
     },
     room: {
-      type: String,
+      type: Object,
       required: true,
     },
   });

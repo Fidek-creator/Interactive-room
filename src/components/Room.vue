@@ -14,8 +14,9 @@
   });
 </script>
 <template>
-  <section :id="props.room.name == props.modelValue ? 'back' : props.room.name.toString().toLowerCase()" v-show="modelValue == '' || modelValue == room.name">
+  <section v-show="modelValue == '' || modelValue == room.name">
     <p
+      :id="props.room.name == props.modelValue ? 'back' : props.room.name.toString().toLowerCase()"
       class="hover:bg-blue-700 rounded-full p-4 hover:text-gray-300 hover:scale-75 cursor-pointer"
       @click="emit('update:modelValue', room.name == modelValue ? '' : room.name)">
       {{ props.room.name == modelValue ? 'Wstecz' : props.room.name }}

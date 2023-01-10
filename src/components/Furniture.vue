@@ -35,7 +35,9 @@
   });
 </script>
 <template>
+  
   <div class="py-4 px-3 flex flex-col text-center text-gray-400 text-xl font-semibold">
+    
     <p>
       <button
         @click="changeId(-1)"

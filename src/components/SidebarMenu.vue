@@ -73,6 +73,7 @@
       <Room v-model="selectedRoom" :room="room" />
     </div>
   </div>
+  
 
 
 </template>

@@ -9,207 +9,201 @@
       </value>
     </block>
   </tab>
-  <tab name="Lists" type="SecondaryTab" active="false" scrollx="-47.508325324381076" scrolly="-70.35745168288202" scale="0.6396131971171093">
+  <tab name="Lists" type="SecondaryTab" active="false" scrollx="339.43125180780146" scrolly="623.6784538234101" scale="0.5939794798318192">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="V+}qttxPN4mX[2-f)EV7">Fridges</variable>
+      <variable id="2f)4/l:|/waOajNI@KLk">Corners</variable>
+      <variable id="WjMx^AYlA^PK9s^^#CqS">Sinks</variable>
+      <variable id="YpN|L+cNsl0J1hrp(UzD">Cupboards</variable>
+      <variable id="W![{;1G-!g[)KIPXvse#">Dinig_chairs</variable>
+      <variable id="2vBQ}-e-!6D(HUu8%#hx">Dining_table</variable>
+      <variable id="Q^b][6_HHBuP]t0KY)]n">Sofas</variable>
+      <variable id="S3,oeM5s=maWIS]m@|Tu">Dressers</variable>
       <variable id="!.$GQl,pvI@?4xQyQl4e">FridgeID</variable>
+      <variable id="lW|Ek+e8,pe7PBXYGj_Q">my_Corner</variable>
+      <variable id="zS9o^i+xyDpiF).{GLi@">my_Sink</variable>
+      <variable id="egq~A5S)[SVLyNoJ#aXv">my_Cupboard</variable>
+      <variable id="N$ZE|6zOdc13nePc}=yL">my_sofa</variable>
     </variables>
-    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="C^o1vG9pxA1O)3HEZrI@" x="270" y="110">
+    <block xmlns="https://developers.google.com/blockly/xml" type="objectList" id="l[o!!`8NN:9!8)P#KH#e" x="-150" y="-1050">
+      <field name="FIELDNAME">lodowka.moja</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="C^o1vG9pxA1O)3HEZrI@" x="-490" y="-970">
       <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
       <value name="VALUE">
         <block type="lists_create_with" id="2_LQ=86MPERz^F[kNjX6">
           <mutation items="4"></mutation>
           <value name="ADD0">
             <block type="objectList" id="h[mgt|m07k#Vi?Ctc%qd">
-              <field name="FIELDNAME">lodowka1</field>
+              <field name="FIELDNAME">lodowka.1</field>
             </block>
           </value>
           <value name="ADD1">
             <block type="objectList" id="D#f?DQfWvadcK2+tMlkG">
-              <field name="FIELDNAME">lodowka2</field>
+              <field name="FIELDNAME">lodowka.2</field>
             </block>
           </value>
           <value name="ADD2">
             <block type="objectList" id="?=~OZ]J+[+wlrRHhx|#}">
-              <field name="FIELDNAME">lodowka3</field>
-            </block>
-          </value>
-          <value name="ADD3">
-            <block type="objectList" id="l[o!!`8NN:9!8)P#KH#e">
-              <field name="FIELDNAME">lodowka.moja</field>
+              <field name="FIELDNAME">lodowka.3</field>
             </block>
           </value>
         </block>
       </value>
       <next>
-        <block type="hide" id="/P9*-GGXV*i:`9I)[H5r">
+        <block type="hide" id="(/%)H?y$Ii8Ka+h6]:bH">
           <value name="VALUE">
-            <shadow type="objectList" id="|Cjk,455T%T?x?6Suz[n">
-              <field name="FIELDNAME">lodowka2</field>
+            <shadow type="objectList" id="C[H-.;u*Jmh|h,/9:E}Z">
+              <field name="FIELDNAME">lodowka.moja</field>
             </shadow>
+            <block type="variables_get" id="K.RhUt+6c(9/6Mz`XAr-">
+              <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
+            </block>
           </value>
           <next>
-            <block type="hide" id="A3~i[Z6pi(?b7$1HEb[D">
+            <block type="variables_set" id="lKK~aCzMK`A_2$?}p6qy">
+              <field name="VAR" id="!.$GQl,pvI@?4xQyQl4e">FridgeID</field>
               <value name="VALUE">
-                <shadow type="objectList" id="YQ_qF5US9eWPRGi3rXQ.">
-                  <field name="FIELDNAME">lodowka3</field>
-                </shadow>
-              </value>
-              <next>
-                <block type="hide" id="(/%)H?y$Ii8Ka+h6]:bH">
-                  <value name="VALUE">
-                    <shadow type="objectList" id="C[H-.;u*Jmh|h,/9:E}Z">
-                      <field name="FIELDNAME">lodowka.moja</field>
+                <block type="math_arithmetic" id="Fw)S/sHqC|gYySl/z}qs">
+                  <field name="OP">MINUS</field>
+                  <value name="A">
+                    <shadow type="math_number" id="+gWUi7rx#7`9^*BK:[ch">
+                      <field name="NUM">2</field>
+                    </shadow>
+                    <block type="lists_length" id="~j?TyzBj:ySpR^g2H{WO">
+                      <value name="VALUE">
+                        <block type="variables_get" id="E|ttL#-hi4ZA37_,IRwd">
+                          <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <shadow type="math_number" id="+Vnkof!yXPD|f#Q.IZnn">
+                      <field name="NUM">1</field>
                     </shadow>
                   </value>
-                  <next>
-                    <block type="variables_set" id="lKK~aCzMK`A_2$?}p6qy">
-                      <field name="VAR" id="!.$GQl,pvI@?4xQyQl4e">FridgeID</field>
+                </block>
+              </value>
+              <next>
+                <block type="hide" id="8U}VV^u6$KVR^9)H:cD-">
+                  <value name="VALUE">
+                    <shadow type="objectList" id="]xL-/gn?o#_5qC+0EV,w">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="lists_getIndex" id="dMzhBwg3|@0,A}:HNyRJ">
+                      <mutation statement="false" at="true"></mutation>
+                      <field name="MODE">GET</field>
+                      <field name="WHERE">FROM_START</field>
                       <value name="VALUE">
-                        <block type="math_arithmetic" id="Fw)S/sHqC|gYySl/z}qs">
-                          <field name="OP">MINUS</field>
-                          <value name="A">
-                            <shadow type="math_number" id="+gWUi7rx#7`9^*BK:[ch">
-                              <field name="NUM">2</field>
-                            </shadow>
-                            <block type="lists_length" id="~j?TyzBj:ySpR^g2H{WO">
-                              <value name="VALUE">
-                                <block type="variables_get" id="E|ttL#-hi4ZA37_,IRwd">
-                                  <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
-                                </block>
-                              </value>
+                        <block type="variables_get" id="t.OHJ9~J$B#rt}k(7CVv">
+                          <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
+                        </block>
+                      </value>
+                      <value name="AT">
+                        <block type="math_number" id="vmWQC?Jm7)w|rCQcy2#B">
+                          <field name="NUM">0</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <next>
+                    <block type="show" id="{w0a~rk,tgK6px-cjh+U">
+                      <value name="VALUE">
+                        <shadow type="objectList" id="EuSCz[3#ilPG_wI?Y^Dp">
+                          <field name="FIELDNAME">&lt;none&gt;</field>
+                        </shadow>
+                        <block type="lists_getIndex" id="7)bl~9qA^7$nnD[68;U;">
+                          <mutation statement="false" at="true"></mutation>
+                          <field name="MODE">GET</field>
+                          <field name="WHERE">FROM_START</field>
+                          <value name="VALUE">
+                            <block type="variables_get" id="ha#p[iSr=lUf=($%@|7c">
+                              <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
                             </block>
                           </value>
-                          <value name="B">
-                            <shadow type="math_number" id="+Vnkof!yXPD|f#Q.IZnn">
-                              <field name="NUM">1</field>
-                            </shadow>
+                          <value name="AT">
+                            <block type="variables_get" id="*NQ7TJgqI;WGT/[~0+cV">
+                              <field name="VAR" id="!.$GQl,pvI@?4xQyQl4e">FridgeID</field>
+                            </block>
                           </value>
                         </block>
                       </value>
                       <next>
-                        <block type="hide" id="8U}VV^u6$KVR^9)H:cD-">
+                        <block type="whenHovered" id="IBDf@ws?P+La~xgx?b7B" inline="false">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+                          <field name="X_RAY">FALSE</field>
                           <value name="VALUE">
-                            <shadow type="objectList" id="]xL-/gn?o#_5qC+0EV,w">
+                            <shadow type="objectList" id="0IY|Ho*SG/Bw!GJ4zGQ?">
                               <field name="FIELDNAME">&lt;none&gt;</field>
                             </shadow>
-                            <block type="lists_getIndex" id="dMzhBwg3|@0,A}:HNyRJ">
-                              <mutation statement="false" at="true"></mutation>
-                              <field name="MODE">GET</field>
-                              <field name="WHERE">FROM_START</field>
-                              <value name="VALUE">
-                                <block type="variables_get" id="t.OHJ9~J$B#rt}k(7CVv">
+                            <block type="variables_get" id="fGg_Sx;sb9ZjQA1DM$}S">
+                              <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
+                            </block>
+                          </value>
+                          <statement name="DO_OVER">
+                            <block type="outline" id="vV-OYQYBJ7A-J@KWs;dH">
+                              <field name="DO_WHAT">ENABLE</field>
+                              <value name="TARGET">
+                                <shadow type="objectList" id=")YaJ8N7#e|{{WK+fO{|Z">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="variables_get" id="K%(NP~!ty[g+gqG;XL?k">
                                   <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
                                 </block>
                               </value>
-                              <value name="AT">
-                                <block type="math_number" id="vmWQC?Jm7)w|rCQcy2#B">
-                                  <field name="NUM">0</field>
+                            </block>
+                          </statement>
+                          <statement name="DO_OUT">
+                            <block type="outline" id="6J{s3V*eWMI:^%y)jp(;">
+                              <field name="DO_WHAT">DISABLE</field>
+                              <value name="TARGET">
+                                <shadow type="objectList" id="%P$_W!=m1)m6wJ@Y}-Mj">
+                                  <field name="FIELDNAME">&lt;none&gt;</field>
+                                </shadow>
+                                <block type="variables_get" id="DWQtH5^0PG9w4GD:,[~k">
+                                  <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
                                 </block>
                               </value>
                             </block>
-                          </value>
+                          </statement>
                           <next>
-                            <block type="show" id="{w0a~rk,tgK6px-cjh+U">
+                            <block type="whenClicked" id="f=wh@Fw32rH`L6c0p%=a" inline="false">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+                              <field name="X_RAY">FALSE</field>
+                              <field name="DOUBLE_CLICK">FALSE</field>
+                              <field name="LEFT_BUTTON">TRUE</field>
+                              <field name="MIDDLE_BUTTON">TRUE</field>
+                              <field name="RIGHT_BUTTON">TRUE</field>
                               <value name="VALUE">
-                                <shadow type="objectList" id="EuSCz[3#ilPG_wI?Y^Dp">
+                                <shadow type="objectList" id="~kx+Be14.f(+Z849N:Yf">
                                   <field name="FIELDNAME">&lt;none&gt;</field>
                                 </shadow>
-                                <block type="lists_getIndex" id="7)bl~9qA^7$nnD[68;U;">
-                                  <mutation statement="false" at="true"></mutation>
-                                  <field name="MODE">GET</field>
-                                  <field name="WHERE">FROM_START</field>
-                                  <value name="VALUE">
-                                    <block type="variables_get" id="ha#p[iSr=lUf=($%@|7c">
-                                      <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
-                                    </block>
-                                  </value>
-                                  <value name="AT">
-                                    <block type="variables_get" id="*NQ7TJgqI;WGT/[~0+cV">
-                                      <field name="VAR" id="!.$GQl,pvI@?4xQyQl4e">FridgeID</field>
-                                    </block>
-                                  </value>
+                                <block type="variables_get" id="]q?(YGw(gqP=28w24Cr#">
+                                  <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
                                 </block>
                               </value>
-                              <next>
-                                <block type="whenHovered" id="IBDf@ws?P+La~xgx?b7B" inline="false">
-                                  <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
-                                  <field name="X_RAY">FALSE</field>
-                                  <value name="VALUE">
-                                    <shadow type="objectList" id="0IY|Ho*SG/Bw!GJ4zGQ?">
-                                      <field name="FIELDNAME">&lt;none&gt;</field>
-                                    </shadow>
-                                    <block type="variables_get" id="fGg_Sx;sb9ZjQA1DM$}S">
-                                      <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
+                              <statement name="DO">
+                                <block type="tweenCameraExt" id="|/?]$[e`YH8~o~H`S$*9">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                                  <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                                  <value name="POSITION">
+                                    <block type="objectList" id="|-hYVpu7h.oIi9W2eU*d">
+                                      <field name="FIELDNAME">Kamera.pozycja.lodowka</field>
                                     </block>
                                   </value>
-                                  <statement name="DO_OVER">
-                                    <block type="outline" id="vV-OYQYBJ7A-J@KWs;dH">
-                                      <field name="DO_WHAT">ENABLE</field>
-                                      <value name="TARGET">
-                                        <shadow type="objectList" id=")YaJ8N7#e|{{WK+fO{|Z">
-                                          <field name="FIELDNAME">&lt;none&gt;</field>
-                                        </shadow>
-                                        <block type="variables_get" id="K%(NP~!ty[g+gqG;XL?k">
-                                          <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
-                                        </block>
-                                      </value>
+                                  <value name="LOOKAT">
+                                    <block type="objectList" id="^G_H-BpF_sy08QI{4RE[">
+                                      <field name="FIELDNAME">Kamera.kierunek.lodowka</field>
                                     </block>
-                                  </statement>
-                                  <statement name="DO_OUT">
-                                    <block type="outline" id="6J{s3V*eWMI:^%y)jp(;">
-                                      <field name="DO_WHAT">DISABLE</field>
-                                      <value name="TARGET">
-                                        <shadow type="objectList" id="%P$_W!=m1)m6wJ@Y}-Mj">
-                                          <field name="FIELDNAME">&lt;none&gt;</field>
-                                        </shadow>
-                                        <block type="variables_get" id="DWQtH5^0PG9w4GD:,[~k">
-                                          <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
-                                        </block>
-                                      </value>
-                                    </block>
-                                  </statement>
-                                  <next>
-                                    <block type="whenClicked" id="f=wh@Fw32rH`L6c0p%=a" inline="false">
-                                      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
-                                      <field name="X_RAY">FALSE</field>
-                                      <field name="DOUBLE_CLICK">FALSE</field>
-                                      <field name="LEFT_BUTTON">TRUE</field>
-                                      <field name="MIDDLE_BUTTON">TRUE</field>
-                                      <field name="RIGHT_BUTTON">TRUE</field>
-                                      <value name="VALUE">
-                                        <shadow type="objectList" id="~kx+Be14.f(+Z849N:Yf">
-                                          <field name="FIELDNAME">&lt;none&gt;</field>
-                                        </shadow>
-                                        <block type="variables_get" id="]q?(YGw(gqP=28w24Cr#">
-                                          <field name="VAR" id="V+}qttxPN4mX[2-f)EV7">Fridges</field>
-                                        </block>
-                                      </value>
-                                      <statement name="DO">
-                                        <block type="tweenCameraExt" id="|/?]$[e`YH8~o~H`S$*9">
-                                          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
-                                          <field name="MOVEMENT_TYPE">SPHERICAL</field>
-                                          <value name="POSITION">
-                                            <block type="objectList" id="|-hYVpu7h.oIi9W2eU*d">
-                                              <field name="FIELDNAME">Kamera.pozycja.lodowka</field>
-                                            </block>
-                                          </value>
-                                          <value name="LOOKAT">
-                                            <block type="objectList" id="^G_H-BpF_sy08QI{4RE[">
-                                              <field name="FIELDNAME">Kamera.kierunek.lodowka</field>
-                                            </block>
-                                          </value>
-                                          <value name="DURATION">
-                                            <shadow type="math_number" id="rea0c^}P|wmHDyA3fMqb">
-                                              <field name="NUM">3</field>
-                                            </shadow>
-                                          </value>
-                                        </block>
-                                      </statement>
-                                    </block>
-                                  </next>
+                                  </value>
+                                  <value name="DURATION">
+                                    <shadow type="math_number" id="rea0c^}P|wmHDyA3fMqb">
+                                      <field name="NUM">2</field>
+                                    </shadow>
+                                  </value>
                                 </block>
-                              </next>
+                              </statement>
                             </block>
                           </next>
                         </block>
@@ -223,8 +217,707 @@
         </block>
       </next>
     </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="oIx]_4Ocz,~?a1iU1Q7W" x="630" y="-990">
+      <field name="VAR" id="2f)4/l:|/waOajNI@KLk">Corners</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="kmQOWU_Qzzp0wvB_j;MI">
+          <mutation items="2"></mutation>
+          <value name="ADD0">
+            <block type="variables_get" id="VR|Fej/5+4awxA:5N,m:">
+              <field name="VAR" id="lW|Ek+e8,pe7PBXYGj_Q">my_Corner</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="Ni-$=V}$:jBWHyylje(.">
+              <field name="FIELDNAME">narozniki.1</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="whenHovered" id="5PV2=PeLK;[S.b~gV3AQ" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="0IY|Ho*SG/Bw!GJ4zGQ?">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="variables_get" id="+TkYQ=oM,7Gv8L!Ur4~E">
+              <field name="VAR" id="2f)4/l:|/waOajNI@KLk">Corners</field>
+            </block>
+          </value>
+          <statement name="DO_OVER">
+            <block type="outline" id="eTzcz0Y$Vv,80|#Haq#=">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id=")YaJ8N7#e|{{WK+fO{|Z">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="`VS)6v$hocMUsaN_}tv:">
+                  <field name="VAR" id="2f)4/l:|/waOajNI@KLk">Corners</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="outline" id="n$tM}%0*O#W?nQ368*^+">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="%P$_W!=m1)m6wJ@Y}-Mj">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="a/3r`/]0:N_|eAT2^o6~">
+                  <field name="VAR" id="2f)4/l:|/waOajNI@KLk">Corners</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenClicked" id="IR.*Y$inj%_2l$GI71Tw" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="~kx+Be14.f(+Z849N:Yf">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="nIQK,,x3yTu0?UOxK~hE">
+                  <field name="VAR" id="2f)4/l:|/waOajNI@KLk">Corners</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="tweenCameraExt" id="Vm!+oI`CawFNhG0|VI{C">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                  <value name="POSITION">
+                    <block type="objectList" id="ih9RJ#8C-I*rkQ)J*6$!">
+                      <field name="FIELDNAME">Kamera.kuchnia.pozycja.glowna</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="objectList" id="r/AXU1e!kzk9Ck7+Tsy+">
+                      <field name="FIELDNAME">noże</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="x6p({O[[1h%U2ZHG|Vj[">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="l{y*W`+sq:oM-i_I!OD)" x="1630" y="-990">
+      <field name="VAR" id="WjMx^AYlA^PK9s^^#CqS">Sinks</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="tvJh=HKt#-bs;!jn`ObN">
+          <mutation items="2"></mutation>
+          <value name="ADD0">
+            <block type="variables_get" id="V{Fxr#ZVBuu%{S`J{*P^">
+              <field name="VAR" id="zS9o^i+xyDpiF).{GLi@">my_Sink</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="i%-r)IbOwuRMIqIo/p/#">
+              <field name="FIELDNAME">Zlew</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="whenHovered" id="J}+R4E].P2DC(h3,Aw]u" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="0IY|Ho*SG/Bw!GJ4zGQ?">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="variables_get" id="NuS_wdQWbny{5%?$yj#m">
+              <field name="VAR" id="WjMx^AYlA^PK9s^^#CqS">Sinks</field>
+            </block>
+          </value>
+          <statement name="DO_OVER">
+            <block type="outline" id="VVI*:^A3LOQLv-44wSUL">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id=")YaJ8N7#e|{{WK+fO{|Z">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="w@6x7MiIX~mP~#|F=omo">
+                  <field name="VAR" id="WjMx^AYlA^PK9s^^#CqS">Sinks</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="outline" id=".TSuo:Z7c0mUJIR.]S$5">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="%P$_W!=m1)m6wJ@Y}-Mj">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="AS.=Y)p!?nfHPkcNz.7/">
+                  <field name="VAR" id="WjMx^AYlA^PK9s^^#CqS">Sinks</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenClicked" id="6I%J2z_BN7m(UOSyozJo" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="~kx+Be14.f(+Z849N:Yf">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="pfK$6MaN:T8C$PZYvRGG">
+                  <field name="VAR" id="WjMx^AYlA^PK9s^^#CqS">Sinks</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="tweenCameraExt" id="kFvBIvr)!qA6gMB8,||Z">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                  <value name="POSITION">
+                    <block type="objectList" id="mXOBH2/$YG]-eYV-%D#,">
+                      <field name="FIELDNAME">Kamera.kuchnia.pozycja.glowna</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="objectList" id="BsO%Qe34FGmCP9]s8Z.D">
+                      <field name="FIELDNAME">okno.kuchnia</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="2v(l`gAJy;|%Zh`1##h[">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="IY1Fv[qPM[qS~+X}]$n3" x="2690" y="-1010">
+      <field name="VAR" id="YpN|L+cNsl0J1hrp(UzD">Cupboards</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="Bb`.)cKLr!~8s(0qZ)8`">
+          <mutation items="2"></mutation>
+          <value name="ADD0">
+            <block type="variables_get" id="BD5`yyKNYWgmWgtpKqFe">
+              <field name="VAR" id="egq~A5S)[SVLyNoJ#aXv">my_Cupboard</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="^o~J.jZ4L_TBJfR:-i22">
+              <field name="FIELDNAME">kredensy.1</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="whenHovered" id="7w?mA4T-^PL|6av(qd5+" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="0IY|Ho*SG/Bw!GJ4zGQ?">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="variables_get" id="F^[vEa-(}Alz5%0I3OfC">
+              <field name="VAR" id="YpN|L+cNsl0J1hrp(UzD">Cupboards</field>
+            </block>
+          </value>
+          <statement name="DO_OVER">
+            <block type="outline" id="r5.noXQM$y[96KY8%ls_">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id=")YaJ8N7#e|{{WK+fO{|Z">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="rXL#t)J%qir`ZixC7~$9">
+                  <field name="VAR" id="YpN|L+cNsl0J1hrp(UzD">Cupboards</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="outline" id="D/tP|qa1XrlPqTEU98bN">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="%P$_W!=m1)m6wJ@Y}-Mj">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="SU0r*jB=Pa%qlLKpJu,t">
+                  <field name="VAR" id="YpN|L+cNsl0J1hrp(UzD">Cupboards</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenClicked" id="vmb10%QR.T,53:(=EO^2" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="~kx+Be14.f(+Z849N:Yf">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="dW7u19IEP%+|0D+$KuH0">
+                  <field name="VAR" id="YpN|L+cNsl0J1hrp(UzD">Cupboards</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="tweenCameraExt" id="s7WOBs.)_1abeeybeQ@k">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                  <value name="POSITION">
+                    <block type="objectList" id="i.]DT%Fq?~HJLW}]A#C-">
+                      <field name="FIELDNAME">Kamera.kuchnia.pozycja.glowna</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="objectList" id="*IR=zSO},Y;O[aib92ir">
+                      <field name="FIELDNAME">Kamera.pozycja.lodowka</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="+UX]r?o9T!W5j{v0]Unr">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="DkAP!)|QG**[W+7WvrsD" x="-470" y="-390">
+      <field name="VAR" id="W![{;1G-!g[)KIPXvse#">Dinig_chairs</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id=";PLY|lXuEPM9g3o|^:}D">
+          <mutation items="3"></mutation>
+          <value name="ADD0">
+            <block type="objectList" id="DEe3(lJ~_{lOp.y;G:Xs">
+              <field name="FIELDNAME">krzesla.1</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="6Eb+.()r=yFr)k98q1;l">
+              <field name="FIELDNAME">krzesla.2</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="objectList" id="]_E|[/ac)TT$6eB}Wffn">
+              <field name="FIELDNAME">krzesla.3</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="whenHovered" id="HDjqd.CSUs!OJJoC4+*s" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="0IY|Ho*SG/Bw!GJ4zGQ?">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="variables_get" id="jU.r}+z^Z7q;+Ara$(;z">
+              <field name="VAR" id="W![{;1G-!g[)KIPXvse#">Dinig_chairs</field>
+            </block>
+          </value>
+          <statement name="DO_OVER">
+            <block type="outline" id="n#h-v712J{HI-E@im{Y+">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id=")YaJ8N7#e|{{WK+fO{|Z">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="7I7d92zMll8P5i?WdtiC">
+                  <field name="VAR" id="W![{;1G-!g[)KIPXvse#">Dinig_chairs</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="outline" id="3EyS$s+`AR3.c=edObd|">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="%P$_W!=m1)m6wJ@Y}-Mj">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="/f+W2!~L-it_e0*g4#kG">
+                  <field name="VAR" id="W![{;1G-!g[)KIPXvse#">Dinig_chairs</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenClicked" id="QsU0C*I%Ai*;?xKu?M43" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="~kx+Be14.f(+Z849N:Yf">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="-P8+X?k,%oQk%;CB%+zc">
+                  <field name="VAR" id="W![{;1G-!g[)KIPXvse#">Dinig_chairs</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="tweenCameraExt" id="u+E^0WW2AV`q97N`$Ahu">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                  <value name="POSITION">
+                    <block type="objectList" id="cj*E^qc/tVKp0-#ttLC^">
+                      <field name="FIELDNAME">Kamera.pozycja.stol</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="objectList" id="C#D^.d?]SwHk[gYJ}5Ja">
+                      <field name="FIELDNAME">Kamera.kierunek.stol</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="x-82x;Ybin0x^3wu.@{y">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="~Df%ru0uWScoNPth)nA8" x="710" y="-410">
+      <field name="VAR" id="2vBQ}-e-!6D(HUu8%#hx">Dining_table</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="m(WL(Riv}Y9~OJJ02Go[">
+          <mutation items="3"></mutation>
+          <value name="ADD0">
+            <block type="objectList" id="q)!mdgBL#,3YB`$W`GW+">
+              <field name="FIELDNAME">stol.kuchnia.1</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="E?;D4CFQ7$-|I#ON{2e)">
+              <field name="FIELDNAME">stol.kuchnia.2</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="objectList" id="VSfJp][Vckfq})eh#dtT">
+              <field name="FIELDNAME">stol.kuchnia.3</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="whenHovered" id="n:%dKD~=`zFC*XgF{zwz" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="0IY|Ho*SG/Bw!GJ4zGQ?">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="variables_get" id="HM^f4px3Z#6,VvVPpgsw">
+              <field name="VAR" id="2vBQ}-e-!6D(HUu8%#hx">Dining_table</field>
+            </block>
+          </value>
+          <statement name="DO_OVER">
+            <block type="outline" id="I#]j[J=Cv8yq!,O(Fb?)">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id=")YaJ8N7#e|{{WK+fO{|Z">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="paa7=umLD-(gtq?I~k@M">
+                  <field name="VAR" id="2vBQ}-e-!6D(HUu8%#hx">Dining_table</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="outline" id="l-YT;(F,Akw9U`e?ptDP">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="%P$_W!=m1)m6wJ@Y}-Mj">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="pJm$ZmhB~v|Y!aR_FS^1">
+                  <field name="VAR" id="2vBQ}-e-!6D(HUu8%#hx">Dining_table</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenClicked" id="c5MXp9~a4dgTJ,2#s[[f" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="~kx+Be14.f(+Z849N:Yf">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="V)[E5b=@J_(+EVy}HX4p">
+                  <field name="VAR" id="2vBQ}-e-!6D(HUu8%#hx">Dining_table</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="tweenCameraExt" id="dlL{8A%4*act*u`|.9jg">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                  <value name="POSITION">
+                    <block type="objectList" id="/NG!07_~^:|xeE)7qsAS">
+                      <field name="FIELDNAME">Kamera.pozycja.stol</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="objectList" id="I;[]m8=s,ZL}}l^,O%bW">
+                      <field name="FIELDNAME">Kamera.kierunek.stol</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="#0@xE0ocozxWP4NdqrD#">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="eHVpd@F*d(5z2@2{*U8b" x="1850" y="-450">
+      <field name="VAR" id="Q^b][6_HHBuP]t0KY)]n">Sofas</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="UX+s}XNgQ^i+2-e}d$do">
+          <mutation items="3"></mutation>
+          <value name="ADD0">
+            <block type="variables_get" id="_fZqkmB;=N[BBL=mMhSw">
+              <field name="VAR" id="N$ZE|6zOdc13nePc}=yL">my_sofa</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="C(W=S80%s=s{7g:TnJqc">
+              <field name="FIELDNAME">sofa.1</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="objectList" id="tv`Yc_P=~VRP~lvNBh;_">
+              <field name="FIELDNAME">sofa.2</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="whenHovered" id="P`bwqs=L}dd?z7u+06mb" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="0IY|Ho*SG/Bw!GJ4zGQ?">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="variables_get" id="%zX).}8z2XF3qN5TY*Dk">
+              <field name="VAR" id="Q^b][6_HHBuP]t0KY)]n">Sofas</field>
+            </block>
+          </value>
+          <statement name="DO_OVER">
+            <block type="outline" id="D`g*ps}jeesXNm@eCY)u">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id=")YaJ8N7#e|{{WK+fO{|Z">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="8+Fs?UXrYNiOJiz~-]21">
+                  <field name="VAR" id="Q^b][6_HHBuP]t0KY)]n">Sofas</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="outline" id="EL0mrdP]94XI3;|:sIDg">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="%P$_W!=m1)m6wJ@Y}-Mj">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="Qsags+~t.lT[QR-/V3[I">
+                  <field name="VAR" id="Q^b][6_HHBuP]t0KY)]n">Sofas</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenClicked" id="#D3T3;u,dXQJ:C8g08on" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="~kx+Be14.f(+Z849N:Yf">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="*]b_Gm8`TyE55Gob^tE:">
+                  <field name="VAR" id="Q^b][6_HHBuP]t0KY)]n">Sofas</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="tweenCameraExt" id="@#..mv{o,6}H7Buf{qIC">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                  <value name="POSITION">
+                    <block type="objectList" id="*61O57n^zHqqm2N`e#A/">
+                      <field name="FIELDNAME">Kamera.pozycja.kuchnia</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="objectList" id="$==M:5PSMESB#cPaRJec">
+                      <field name="FIELDNAME">Kamera.kierunek.sofa</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="a%W=:#a/v!PssOBPs7Ju">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="pK%EpyqB]c`3k,lID2am" x="2890" y="-450">
+      <field name="VAR" id="S3,oeM5s=maWIS]m@|Tu">Dressers</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="xYy/:N^_Jk:gn6KUV;kw">
+          <mutation items="3"></mutation>
+          <value name="ADD0">
+            <block type="objectList" id="{-41$}zW]x9_xYPmV9ap">
+              <field name="FIELDNAME">komoda.1</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="5SipHZ%BdH|BuCiI(*7h">
+              <field name="FIELDNAME">Komoda.2</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="objectList" id="Jz62bj[mRBvA;3jweG8s">
+              <field name="FIELDNAME">komoda.3</field>
+            </block>
+          </value>
+        </block>
+      </value>
+      <next>
+        <block type="whenHovered" id="dJdfOa)VJP-$;IA%]bWf" inline="false">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false"></mutation>
+          <field name="X_RAY">FALSE</field>
+          <value name="VALUE">
+            <shadow type="objectList" id="0IY|Ho*SG/Bw!GJ4zGQ?">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="variables_get" id="L{,:wi~Uzx.M01pYz^U:">
+              <field name="VAR" id="S3,oeM5s=maWIS]m@|Tu">Dressers</field>
+            </block>
+          </value>
+          <statement name="DO_OVER">
+            <block type="outline" id="?FaPwjZLr7/Q].x0-rom">
+              <field name="DO_WHAT">ENABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id=")YaJ8N7#e|{{WK+fO{|Z">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="BevQYl;DcY`e(QwlmAGW">
+                  <field name="VAR" id="S3,oeM5s=maWIS]m@|Tu">Dressers</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <statement name="DO_OUT">
+            <block type="outline" id="0@~1%lDTV~EF}j%+{sWP">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="%P$_W!=m1)m6wJ@Y}-Mj">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="I%6BI-2C,7,uoDdhae=K">
+                  <field name="VAR" id="S3,oeM5s=maWIS]m@|Tu">Dressers</field>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="whenClicked" id="{z3zQ*--G_Y7%/;YTDKh" inline="false">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+              <field name="X_RAY">FALSE</field>
+              <field name="DOUBLE_CLICK">FALSE</field>
+              <field name="LEFT_BUTTON">TRUE</field>
+              <field name="MIDDLE_BUTTON">TRUE</field>
+              <field name="RIGHT_BUTTON">TRUE</field>
+              <value name="VALUE">
+                <shadow type="objectList" id="~kx+Be14.f(+Z849N:Yf">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="variables_get" id="^ngUnsjzd)AdHP|?S.fE">
+                  <field name="VAR" id="S3,oeM5s=maWIS]m@|Tu">Dressers</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="tweenCameraExt" id="[y;0CjkGPmaIvMmi`-u;">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                  <value name="POSITION">
+                    <block type="objectList" id="oFS7hX=u_u`W:YaL6D/7">
+                      <field name="FIELDNAME">Kamera.pozycja.kuchnia</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="objectList" id="48.8EMRB.PSm4nnK*M=c">
+                      <field name="FIELDNAME">Kamera.kierunek.komoda</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="dHsRkruOA+,qO3w8:/_;">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
   </tab>
-  <tab name="Materials" type="SecondaryTab" active="false" scrollx="0" scrolly="-27" scale="0.9">
+  <tab name="Materials" type="SecondaryTab" active="false" scrollx="193.887154986999" scrolly="-28.46087233074273" scale="0.948695744358091">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="/JbXERDF3,Cx3`}5W.8F">sofaMaterials</variable>
     </variables>
@@ -257,7 +950,7 @@
       </value>
     </block>
   </tab>
-  <tab name="Functions" type="SecondaryTab" active="false" scrollx="147.19998168945267" scrolly="-27" scale="0.9">
+  <tab name="Functions" type="SecondaryTab" active="false" scrollx="248.31997680664017" scrolly="-27" scale="0.9">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="YtkyWwkQn/:sO{F${sBL">x</variable>
       <variable id="!.$GQl,pvI@?4xQyQl4e">FridgeID</variable>
@@ -431,7 +1124,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="HTML" type="SecondaryTab" active="true" scrollx="156.8002854027684" scrolly="297.6694796933542" scale="0.6241985657254318">
+  <tab name="HTML" type="SecondaryTab" active="true" scrollx="198.5027893167936" scrolly="184.84129706815213" scale="0.8227024747918816">
     <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="H{%Dn+43$Sj#*rk$l$%)" x="-70" y="-350">
       <field name="EVENT">click</field>
       <field name="PARENT">FALSE</field>
@@ -441,40 +1134,24 @@
         </shadow>
       </value>
       <statement name="DO">
-        <block type="setCameraParam" id="=/l3~={(Qd@iZ}z8;KIM">
-          <mutation xmlns="http://www.w3.org/1999/xhtml" type="FIELD_OF_VIEW"></mutation>
-          <field name="TYPE">FIELD_OF_VIEW</field>
-          <value name="FIELD_OF_VIEW">
-            <shadow type="math_number" id="gIFQH?wBqv3:r2FmYD3Z">
-              <field name="NUM">75</field>
-            </shadow>
-          </value>
-          <value name="OBJECT">
-            <shadow type="objectList" id="1p,jiUvC{k[WU%,:_v;^">
-              <field name="FIELDNAME">Camera</field>
-            </shadow>
-          </value>
-          <next>
-            <block type="tweenCameraExt" id="cqgYPATC`Le=znX[[uf)">
-              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
-              <field name="MOVEMENT_TYPE">SPHERICAL</field>
-              <value name="POSITION">
-                <block type="objectList" id="Cx`d^min7pWiKRiG[}CD">
-                  <field name="FIELDNAME">Kamera.pozycja.salon</field>
-                </block>
-              </value>
-              <value name="LOOKAT">
-                <block type="objectList" id="ANBwf6Nb[90r!4f,w0+n">
-                  <field name="FIELDNAME">Kamera.kierunek.salon</field>
-                </block>
-              </value>
-              <value name="DURATION">
-                <shadow type="math_number" id="~}/Pr9Gr_+Wm,+CYG[xl">
-                  <field name="NUM">3</field>
-                </shadow>
-              </value>
+        <block type="tweenCameraExt" id="cqgYPATC`Le=znX[[uf)">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+          <field name="MOVEMENT_TYPE">SPHERICAL</field>
+          <value name="POSITION">
+            <block type="objectList" id="Cx`d^min7pWiKRiG[}CD">
+              <field name="FIELDNAME">Kamera.pozycja.salon</field>
             </block>
-          </next>
+          </value>
+          <value name="LOOKAT">
+            <block type="objectList" id="ANBwf6Nb[90r!4f,w0+n">
+              <field name="FIELDNAME">Kamera.kierunek.salon</field>
+            </block>
+          </value>
+          <value name="DURATION">
+            <shadow type="math_number" id="~}/Pr9Gr_+Wm,+CYG[xl">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
         </block>
       </statement>
       <next>
@@ -487,46 +1164,30 @@
             </shadow>
           </value>
           <statement name="DO">
-            <block type="setCameraParam" id="S/bQy,T]d%lo9]:K%y6)">
-              <mutation xmlns="http://www.w3.org/1999/xhtml" type="FIELD_OF_VIEW"></mutation>
-              <field name="TYPE">FIELD_OF_VIEW</field>
-              <value name="FIELD_OF_VIEW">
-                <shadow type="math_number" id="oY|+I4ca@LgD_K+DSQ#u">
-                  <field name="NUM">80</field>
-                </shadow>
-              </value>
-              <value name="OBJECT">
-                <shadow type="objectList" id="nKk6*pPiErW;xhg-AIvO">
-                  <field name="FIELDNAME">Camera</field>
-                </shadow>
-              </value>
-              <next>
-                <block type="tweenCameraExt" id="7(E|]:7g{v*lqAnW#D^W">
-                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
-                  <field name="MOVEMENT_TYPE">SPHERICAL</field>
-                  <value name="POSITION">
-                    <block type="objectList" id="g:XuF?V3Gl7uz./sNW2,">
-                      <field name="FIELDNAME">Kamera.pozycja.kuchnia</field>
-                    </block>
-                  </value>
-                  <value name="LOOKAT">
-                    <block type="objectList" id=";X~L9],I;ZM3o68XZS*Z">
-                      <field name="FIELDNAME">Kamera.kierunek.kuchnia</field>
-                    </block>
-                  </value>
-                  <value name="DURATION">
-                    <shadow type="math_number" id="cs4k3EOz^[Vf+t_|(F;)">
-                      <field name="NUM">3</field>
-                    </shadow>
-                  </value>
+            <block type="tweenCameraExt" id="7(E|]:7g{v*lqAnW#D^W">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+              <field name="MOVEMENT_TYPE">SPHERICAL</field>
+              <value name="POSITION">
+                <block type="objectList" id="g:XuF?V3Gl7uz./sNW2,">
+                  <field name="FIELDNAME">Kamera.pozycja.kuchnia</field>
                 </block>
-              </next>
+              </value>
+              <value name="LOOKAT">
+                <block type="objectList" id=";X~L9],I;ZM3o68XZS*Z">
+                  <field name="FIELDNAME">Kamera.kierunek.kuchnia</field>
+                </block>
+              </value>
+              <value name="DURATION">
+                <shadow type="math_number" id="cs4k3EOz^[Vf+t_|(F;)">
+                  <field name="NUM">2</field>
+                </shadow>
+              </value>
             </block>
           </statement>
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="[xP1+zap)5m+[vP0HU`8" x="-70" y="-50">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="[xP1+zap)5m+[vP0HU`8" x="-50" y="-70">
       <field name="EVENT">change</field>
       <field name="PARENT">FALSE</field>
       <value name="ID">
@@ -545,56 +1206,93 @@
           </value>
           <value name="FACTOR">
             <shadow type="math_number" id="L|n#TUJ9;JSGnntFQ#wn">
-              <field name="NUM">0.5</field>
+              <field name="NUM">0.7</field>
             </shadow>
-            <block type="math_arithmetic" id="RM}08]n^o[Gse`{}o({5">
-              <field name="OP">ADD</field>
-              <value name="A">
-                <shadow type="math_number" id="YnV$Qes@xP-Y*x3!YX@:">
-                  <field name="NUM">2</field>
-                </shadow>
-                <block type="getMorphFactor" id="M4^qsE.d,,ob@eOZD)S,">
-                  <mutation xmlns="http://www.w3.org/1999/xhtml" useflexibletargetinputslot="false"></mutation>
-                  <field name="TARGET_NAME">lodowka.wysokosc</field>
-                  <value name="OBJ_NAME">
-                    <shadow type="objectList" id="pKrEan*?L{s~|cRKLt|b">
-                      <field name="FIELDNAME">lodowka.moja</field>
-                    </shadow>
-                  </value>
-                </block>
-              </value>
-              <value name="B">
-                <shadow type="math_number" id="KG{g?ykbU|t2sa2#3-QV">
-                  <field name="NUM">0.001</field>
-                </shadow>
-              </value>
-            </block>
           </value>
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="pntj;A/(p[PeL5$_u7B%" x="-70" y="150">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="010P{0/EF~HknK(S/aw-" x="-30" y="110">
       <field name="EVENT">click</field>
       <field name="PARENT">FALSE</field>
       <value name="ID">
-        <shadow type="text" id="ImIx@fm8TmH7sdft=Q9K">
+        <shadow type="text" id="S`HHDzm4d+;vcnaBjl@@">
           <field name="TEXT">Kuchnia-Lodówka-0-Kolor-9494FF</field>
         </shadow>
       </value>
       <statement name="DO">
-        <block type="assignMaterial" id="2gVOSOpWS2CZj.9vd!$:">
+        <block type="assignMaterial" id="5bR__U77s,az8?mz%4AT">
           <value name="VALUE2">
-            <shadow type="materialList" id="-7^+`7tv.El/ed;Nb*2D">
-              <field name="FIELDNAME">sofa.moja.czerwona</field>
+            <shadow type="materialList" id="w`rC4$!ExA^:bw%Swnt$">
+              <field name="FIELDNAME">Niebieski_lodowka</field>
             </shadow>
           </value>
           <value name="VALUE1">
-            <shadow type="objectList" id="y1X}uPmj,Fi3QWlwHzgb">
+            <shadow type="objectList" id="kEi+9%|2udn2(J|8xACG">
               <field name="FIELDNAME">lodowka.moja</field>
             </shadow>
           </value>
         </block>
       </statement>
+      <next>
+        <block type="eventHTMLElem" id="7bwK?9r+W0@;)CSJ!vLY">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="X4InzUg2]~di[a9=;~%:">
+              <field name="TEXT">Kuchnia-Lodówka-0-Kolor-D0D0D0</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="E?~FosZ5nSN!AO@!;==!">
+              <value name="VALUE2">
+                <shadow type="materialList" id="c1Q=d{lTra%V71hV%bEN">
+                  <field name="FIELDNAME">Czerwona_lodowka</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="L4a3/@De8EyE}Rrl%u,c">
+                  <field name="FIELDNAME">lodowka.moja</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="yY*$hbd3bwapot2)aR/q">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="O4i{rnYIyFVyYgl41f~U">
+                  <field name="TEXT">Kuchnia-Lodówka-0-Kolor-E4A010</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="}tgaRC`I=#rP=#T9ojq}">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="YBgHRjMr)4:r?sW~#PMm">
+                      <field name="FIELDNAME">Zielona_lodowka.001</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="%C)!:fUFZo|uk%u/G#Yi">
+                      <field name="FIELDNAME">lodowka.moja</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="console.log" id="afu{j--_q~Wm8z{Q2=2_">
+                      <value name="VALUE">
+                        <shadow type="text" id="pd`j0Qh%hTVo?i[+;k}d">
+                          <field name="TEXT">nie dziala</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
     </block>
   </tab>
   <tab name="Functions_usage" type="SecondaryTab" active="false" scrollx="1.6000366210938637" scrolly="-9" scale="0.9">
@@ -644,6 +1342,116 @@
           </statement>
         </block>
       </next>
+    </block>
+  </tab>
+  <tab name="Variables_to_my_furnitures" type="SecondaryTab" active="false" scrollx="375.4597572463739" scrolly="141.0347099643226" scale="0.6715938569729647">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="egq~A5S)[SVLyNoJ#aXv">my_Cupboard</variable>
+      <variable id="lW|Ek+e8,pe7PBXYGj_Q">my_Corner</variable>
+      <variable id="zS9o^i+xyDpiF).{GLi@">my_Sink</variable>
+      <variable id="N$ZE|6zOdc13nePc}=yL">my_sofa</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="B;IKIB:#i!@QG~P?gvA(" x="-370" y="-210">
+      <field name="VAR" id="egq~A5S)[SVLyNoJ#aXv">my_Cupboard</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="((I*ztw13;l8vnwBpaP;">
+          <mutation items="5"></mutation>
+          <value name="ADD0">
+            <block type="objectList" id="%wZ`B6AntUP!tEq;P:2z">
+              <field name="FIELDNAME">kredens.moj</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id=")I)X_m9n87ZH-mo{g#qw">
+              <field name="FIELDNAME">kredens.moj.blat</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="objectList" id="#f(ivY|;?E5%6:{=,!y.">
+              <field name="FIELDNAME">kredens.moj.dol</field>
+            </block>
+          </value>
+          <value name="ADD3">
+            <block type="objectList" id="Z|P;[@W={sW9vqWqMxS`">
+              <field name="FIELDNAME">kredens.moj.drzwi</field>
+            </block>
+          </value>
+          <value name="ADD4">
+            <block type="objectList" id="VtmbYIm9`#e[}V%`K~wR">
+              <field name="FIELDNAME">kredens.moj.uchwyty</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="5W0ld_N!+Y%)_4]9;0yZ" x="-370" y="-30">
+      <field name="VAR" id="lW|Ek+e8,pe7PBXYGj_Q">my_Corner</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="_z#Lp(b*x5%2co!$RBF/">
+          <mutation items="3"></mutation>
+          <value name="ADD0">
+            <block type="objectList" id=";EN_boe/p}b=*pkNt;|c">
+              <field name="FIELDNAME">naroznik.moj</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="._eJ~FyNc|:Vt08!bKtH">
+              <field name="FIELDNAME">naroznik.moj.blat</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="objectList" id="je!a-NDj^id^i3Qc3RGv">
+              <field name="FIELDNAME">naroznik.moj.dol</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id=",zHvtRAV*CkDxq-Fh-*?" x="-370" y="90">
+      <field name="VAR" id="zS9o^i+xyDpiF).{GLi@">my_Sink</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="jLe09i.?YDlsh:,B{%%-">
+          <mutation items="3"></mutation>
+          <value name="ADD0">
+            <block type="objectList" id="1]-eq{ewv)9/twB`m3{i">
+              <field name="FIELDNAME">naroznik.moj</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="8JU5G)M235ZWn_z-3E_3">
+              <field name="FIELDNAME">naroznik.moj.blat</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="objectList" id="2$xIC4p1YK%;c86Z3|B-">
+              <field name="FIELDNAME">naroznik.moj.dol</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="0m=/Ze/A_Z$2^5QQ$=b1" x="-370" y="210">
+      <field name="VAR" id="N$ZE|6zOdc13nePc}=yL">my_sofa</field>
+      <value name="VALUE">
+        <block type="lists_create_with" id="+H)pPYEPSkwcu6eP60}J">
+          <mutation items="3"></mutation>
+          <value name="ADD0">
+            <block type="objectList" id="zu3q}-?(jOKw}nX~/.F=">
+              <field name="FIELDNAME">sofa.moja</field>
+            </block>
+          </value>
+          <value name="ADD1">
+            <block type="objectList" id="PE(O3ckH2=0Q(sghBPtJ">
+              <field name="FIELDNAME">poduszki</field>
+            </block>
+          </value>
+          <value name="ADD2">
+            <block type="objectList" id="~2RbJ`(~J*p@GVa@4-6s">
+              <field name="FIELDNAME">nogi</field>
+            </block>
+          </value>
+        </block>
+      </value>
     </block>
   </tab>
   <editorsettings viewport-x="265.0799560546875" viewport-y="61.12000370025635" viewport-w="878" viewport-h="546" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>

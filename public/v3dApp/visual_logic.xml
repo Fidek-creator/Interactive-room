@@ -1202,7 +1202,7 @@
       </value>
       <next>
         <block type="eventHTMLElem" id="[xP1+zap)5m+[vP0HU`8">
-          <field name="EVENT">click</field>
+          <field name="EVENT">change</field>
           <field name="PARENT">FALSE</field>
           <value name="ID">
             <shadow type="text" id="*|suBwJpZxLr0w/.0_`N">
@@ -1245,44 +1245,44 @@
                   </value>
                 </block>
               </value>
-            </block>
-          </statement>
-          <next>
-            <block type="console.log" id="T(:rTeNXr6h[OF}j8H7]">
-              <value name="VALUE">
-                <shadow type="text" id="qa-s!jM^._lxfywfc~[N">
-                  <field name="TEXT">Hello, Verge!</field>
-                </shadow>
-                <block type="getHTMLElemAttribute" id="_ynRm0(!NdGo1Ena6~Ru">
-                  <field name="ATTRIBUTE">value</field>
-                  <field name="PARENT">FALSE</field>
-                  <value name="ID">
-                    <shadow type="text" id="KZ9Guz*?DKFkkM`v]Sn;">
-                      <field name="TEXT">Kuchnia-Lodówka-0-Wysokość</field>
-                    </shadow>
-                  </value>
-                </block>
-              </value>
               <next>
-                <block type="console.log" id="m|M1(Um/7R|eU=wKl#WB">
+                <block type="console.log" id="T(:rTeNXr6h[OF}j8H7]">
                   <value name="VALUE">
                     <shadow type="text" id="qa-s!jM^._lxfywfc~[N">
                       <field name="TEXT">Hello, Verge!</field>
                     </shadow>
-                    <block type="getHTMLElemAttribute" id="n~2sJj[+{f0jGzuLs4g=">
+                    <block type="getHTMLElemAttribute" id="_ynRm0(!NdGo1Ena6~Ru">
                       <field name="ATTRIBUTE">value</field>
                       <field name="PARENT">FALSE</field>
                       <value name="ID">
-                        <shadow type="text" id="gBUvQ(@x{39izYWk+%E4">
+                        <shadow type="text" id="KZ9Guz*?DKFkkM`v]Sn;">
                           <field name="TEXT">Kuchnia-Lodówka-0-Wysokość</field>
                         </shadow>
                       </value>
                     </block>
                   </value>
+                  <next>
+                    <block type="console.log" id="m|M1(Um/7R|eU=wKl#WB">
+                      <value name="VALUE">
+                        <shadow type="text" id="qa-s!jM^._lxfywfc~[N">
+                          <field name="TEXT">Hello, Verge!</field>
+                        </shadow>
+                        <block type="getHTMLElemAttribute" id="n~2sJj[+{f0jGzuLs4g=">
+                          <field name="ATTRIBUTE">value</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="ID">
+                            <shadow type="text" id="gBUvQ(@x{39izYWk+%E4">
+                              <field name="TEXT">Kuchnia-Lodówka-0-Wysokość</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </value>
+                    </block>
+                  </next>
                 </block>
               </next>
             </block>
-          </next>
+          </statement>
         </block>
       </next>
     </block>

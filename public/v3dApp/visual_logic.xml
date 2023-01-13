@@ -1124,7 +1124,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="HTML" type="SecondaryTab" active="true" scrollx="198.5027893167936" scrolly="184.84129706815213" scale="0.8227024747918816">
+  <tab name="HTML" type="SecondaryTab" active="true" scrollx="131.30277710976213" scrolly="196.8412894387576" scale="0.8227024747918816">
     <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="H{%Dn+43$Sj#*rk$l$%)" x="-70" y="-350">
       <field name="EVENT">click</field>
       <field name="PARENT">FALSE</field>
@@ -1187,32 +1187,106 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="[xP1+zap)5m+[vP0HU`8" x="-50" y="-70">
-      <field name="EVENT">change</field>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setHTMLElemAttribute" id=";lt.,H{6#!SF`~Y+IgJT" x="-30" y="-90">
+      <field name="ATTRIBUTE">value</field>
       <field name="PARENT">FALSE</field>
+      <value name="VALUE">
+        <block type="math_number" id="~L!.`;l2LF6}:v]Y/,HX">
+          <field name="NUM">0</field>
+        </block>
+      </value>
       <value name="ID">
-        <shadow type="text" id="*|suBwJpZxLr0w/.0_`N">
+        <shadow type="text" id="Q`s~zZEUdg()?9MSl~{]">
           <field name="TEXT">Kuchnia-Lodówka-0-Wysokość</field>
         </shadow>
       </value>
-      <statement name="DO">
-        <block type="setMorphFactor" id="Lm{tBJaw}e^Lkl]VufZ4">
-          <mutation xmlns="http://www.w3.org/1999/xhtml" useflexibletargetinputslot="false"></mutation>
-          <field name="TARGET_NAME">lodowka.wysokosc</field>
-          <value name="OBJ_NAME">
-            <shadow type="objectList" id="y6ADPB1Ww@I`xKX|D=.%">
-              <field name="FIELDNAME">lodowka.moja</field>
+      <next>
+        <block type="eventHTMLElem" id="[xP1+zap)5m+[vP0HU`8">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="*|suBwJpZxLr0w/.0_`N">
+              <field name="TEXT">Kuchnia-Lodówka-0-Wysokość</field>
             </shadow>
           </value>
-          <value name="FACTOR">
-            <shadow type="math_number" id="L|n#TUJ9;JSGnntFQ#wn">
-              <field name="NUM">0.7</field>
-            </shadow>
-          </value>
+          <statement name="DO">
+            <block type="setMorphFactor" id="Lm{tBJaw}e^Lkl]VufZ4">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" useflexibletargetinputslot="false"></mutation>
+              <field name="TARGET_NAME">lodowka.wysokosc</field>
+              <value name="OBJ_NAME">
+                <shadow type="objectList" id="y6ADPB1Ww@I`xKX|D=.%">
+                  <field name="FIELDNAME">lodowka.moja</field>
+                </shadow>
+              </value>
+              <value name="FACTOR">
+                <shadow type="math_number" id="L|n#TUJ9;JSGnntFQ#wn">
+                  <field name="NUM">0.7</field>
+                </shadow>
+                <block type="math_arithmetic" id="W`8Y(82z*$tQi:LjsRVm">
+                  <field name="OP">DIVIDE</field>
+                  <value name="A">
+                    <shadow type="math_number" id="`M(T@GtoV1$=?yb+V@#|">
+                      <field name="NUM">2</field>
+                    </shadow>
+                    <block type="getHTMLElemAttribute" id="eE,Oe:H%:Am)ooyP@TS=">
+                      <field name="ATTRIBUTE">value</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="ID">
+                        <shadow type="text" id="UDaqd+TdwR$y.v2[[?iv">
+                          <field name="TEXT">Kuchnia-Lodówka-0-Wysokość</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <shadow type="math_number" id="[5wj=ikgm5TTS~fa+$|w">
+                      <field name="NUM">100</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="console.log" id="T(:rTeNXr6h[OF}j8H7]">
+              <value name="VALUE">
+                <shadow type="text" id="qa-s!jM^._lxfywfc~[N">
+                  <field name="TEXT">Hello, Verge!</field>
+                </shadow>
+                <block type="getHTMLElemAttribute" id="_ynRm0(!NdGo1Ena6~Ru">
+                  <field name="ATTRIBUTE">value</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text" id="KZ9Guz*?DKFkkM`v]Sn;">
+                      <field name="TEXT">Kuchnia-Lodówka-0-Wysokość</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <next>
+                <block type="console.log" id="m|M1(Um/7R|eU=wKl#WB">
+                  <value name="VALUE">
+                    <shadow type="text" id="qa-s!jM^._lxfywfc~[N">
+                      <field name="TEXT">Hello, Verge!</field>
+                    </shadow>
+                    <block type="getHTMLElemAttribute" id="n~2sJj[+{f0jGzuLs4g=">
+                      <field name="ATTRIBUTE">value</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="ID">
+                        <shadow type="text" id="gBUvQ(@x{39izYWk+%E4">
+                          <field name="TEXT">Kuchnia-Lodówka-0-Wysokość</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </next>
         </block>
-      </statement>
+      </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="010P{0/EF~HknK(S/aw-" x="-30" y="110">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="010P{0/EF~HknK(S/aw-" x="-50" y="230">
       <field name="EVENT">click</field>
       <field name="PARENT">FALSE</field>
       <value name="ID">

@@ -5,7 +5,8 @@
   const props = defineProps({
     furnitureProps: {
       type: Array,
-      required: true,
+      required: false,
+      default: null,
     },
     IdPrefix: {
       type: String,

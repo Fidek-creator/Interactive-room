@@ -20,7 +20,6 @@
           :id="props.IdPrefix + props.propDefinition.name + value.replace('#', '-')"
           type="button"
           :style="{ backgroundColor: value }"
-          :class="props.propDefinition.value == value ? 'ring-4 ring-white' : ''"
           class="focus:outline-none focus:ring-4 focus:ring-white rounded-full text-sm px-5 py-5 mb-2 mx-1"></button>
       </div>
     </div>

@@ -26,5 +26,3 @@
     </div>
   </section>
 </template>
-q:what :key is used for?
-a:https://v3.vuejs.org/guide/list.html#key

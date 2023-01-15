@@ -9,7 +9,7 @@
       </value>
     </block>
   </tab>
-  <tab name="Lists" type="SecondaryTab" active="false" scrollx="339.43125180780146" scrolly="623.6784538234101" scale="0.5939794798318192">
+  <tab name="Lists" type="SecondaryTab" active="true" scrollx="467.43125180780146" scrolly="658.0784477198945" scale="0.5939794798318192">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="V+}qttxPN4mX[2-f)EV7">Fridges</variable>
       <variable id="2f)4/l:|/waOajNI@KLk">Corners</variable>
@@ -25,7 +25,7 @@
       <variable id="egq~A5S)[SVLyNoJ#aXv">my_Cupboard</variable>
       <variable id="N$ZE|6zOdc13nePc}=yL">my_sofa</variable>
     </variables>
-    <block xmlns="https://developers.google.com/blockly/xml" type="objectList" id="l[o!!`8NN:9!8)P#KH#e" x="-150" y="-1050">
+    <block xmlns="https://developers.google.com/blockly/xml" type="objectList" id="l[o!!`8NN:9!8)P#KH#e" x="-130" y="-1070">
       <field name="FIELDNAME">lodowka.moja</field>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="C^o1vG9pxA1O)3HEZrI@" x="-490" y="-970">
@@ -1124,7 +1124,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="HTML" type="SecondaryTab" active="true" scrollx="324.7230809726214" scrolly="6.305255377275671" scale="0.6181210179864011">
+  <tab name="HTML" type="SecondaryTab" active="false" scrollx="228.72301993746515" scrolly="143.10524317024442" scale="0.6181210179864011">
     <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="H{%Dn+43$Sj#*rk$l$%)" x="-70" y="-350">
       <field name="EVENT">click</field>
       <field name="PARENT">FALSE</field>

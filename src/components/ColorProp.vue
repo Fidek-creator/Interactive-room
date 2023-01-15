@@ -1,20 +1,20 @@
 <script setup>
-  const props = defineProps({
-    IdPrefix: {
-      type: String,
-      required: true,
-    },
-    propDefinition: {
-      type: Object,
-      required: true,
-    },
-  });
+    const props = defineProps({
+      IdPrefix: {
+        type: String,
+        required: true,
+      },
+      propDefinition: {
+        type: Object,
+        required: true,
+      },
+    });
 </script>
 <template>
   <section>
     <p class="my-2 text-sm font-medium">Kolor</p>
 
-    <div  class="flex justify-center my-2">
+    <div class="flex justify-center my-2">
       <div v-for="value in props.propDefinition.values">
         <button
           :id="props.IdPrefix + props.propDefinition.name + value.replace('#', '-')"

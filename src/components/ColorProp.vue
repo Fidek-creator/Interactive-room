@@ -14,8 +14,8 @@
   <section>
     <p class="my-2 text-sm font-medium">Kolor</p>
 
-    <div class="flex justify-center my-2">
-      <div v-for="value in props.propDefinition.values">
+    <div  class="flex justify-center my-2">
+      <div v-for="value in props.propDefinition.values" :key="value">
         <button
           :id="props.IdPrefix + props.propDefinition.name + value.replace('#', '-')"
           type="button"
@@ -25,3 +25,5 @@
     </div>
   </section>
 </template>
+q:what :key is used for?
+a:https://v3.vuejs.org/guide/list.html#key

@@ -22,11 +22,11 @@
                 {
                   name: 'Kolor',
                   type: 'color',
-                  value: 'red',
+                  value: '#599BE7',
                   values: [
-                    "#9494FF",
-                    "#D0D0D0",
-                    "#E4A010",
+                    "#599BE7",
+                    "#E70500",
+                    "#2BE73E",
                   ]
                 }
               ]

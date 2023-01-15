@@ -1124,7 +1124,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="HTML" type="SecondaryTab" active="true" scrollx="149.70280152382475" scrolly="252.04127112821072" scale="0.8227024747918816">
+  <tab name="HTML" type="SecondaryTab" active="true" scrollx="324.7230809726214" scrolly="6.305255377275671" scale="0.6181210179864011">
     <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="H{%Dn+43$Sj#*rk$l$%)" x="-70" y="-350">
       <field name="EVENT">click</field>
       <field name="PARENT">FALSE</field>
@@ -1302,7 +1302,7 @@
       <field name="PARENT">FALSE</field>
       <value name="ID">
         <shadow type="text" id="S`HHDzm4d+;vcnaBjl@@">
-          <field name="TEXT">Kuchnia-Lodówka-0-Kolor-9494FF</field>
+          <field name="TEXT">Kuchnia-Lodówka-0-Kolor-599BE7</field>
         </shadow>
       </value>
       <statement name="DO">
@@ -1325,7 +1325,7 @@
           <field name="PARENT">FALSE</field>
           <value name="ID">
             <shadow type="text" id="X4InzUg2]~di[a9=;~%:">
-              <field name="TEXT">Kuchnia-Lodówka-0-Kolor-D0D0D0</field>
+              <field name="TEXT">Kuchnia-Lodówka-0-Kolor-E70500</field>
             </shadow>
           </value>
           <statement name="DO">
@@ -1348,28 +1348,42 @@
               <field name="PARENT">FALSE</field>
               <value name="ID">
                 <shadow type="text" id="O4i{rnYIyFVyYgl41f~U">
-                  <field name="TEXT">Kuchnia-Lodówka-0-Kolor-E4A010</field>
+                  <field name="TEXT">Kuchnia-Lodówka-0-Kolor-2BE73E</field>
                 </shadow>
               </value>
               <statement name="DO">
-                <block type="assignMaterial" id="}tgaRC`I=#rP=#T9ojq}">
+                <block type="assignMaterial" id="i0EmuNOhE[Lz$xCJ1Z47">
                   <value name="VALUE2">
-                    <shadow type="materialList" id="YBgHRjMr)4:r?sW~#PMm">
-                      <field name="FIELDNAME">Zielona_lodowka.001</field>
+                    <shadow type="materialList" id="uloUY[Dw%ulDWr(!snD+">
+                      <field name="FIELDNAME">Zielona_lodowka</field>
                     </shadow>
                   </value>
                   <value name="VALUE1">
-                    <shadow type="objectList" id="%C)!:fUFZo|uk%u/G#Yi">
+                    <shadow type="objectList" id="1@sQ(JN,aYq=E}im`uuS">
                       <field name="FIELDNAME">lodowka.moja</field>
                     </shadow>
                   </value>
                   <next>
-                    <block type="console.log" id="afu{j--_q~Wm8z{Q2=2_">
-                      <value name="VALUE">
-                        <shadow type="text" id="pd`j0Qh%hTVo?i[+;k}d">
-                          <field name="TEXT">nie dziala</field>
+                    <block type="assignMaterial" id="}tgaRC`I=#rP=#T9ojq}" disabled="true">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="YBgHRjMr)4:r?sW~#PMm">
+                          <field name="FIELDNAME">Niebieski_lodowka</field>
                         </shadow>
                       </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="%C)!:fUFZo|uk%u/G#Yi">
+                          <field name="FIELDNAME">lodowka.moja</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="console.log" id="afu{j--_q~Wm8z{Q2=2_">
+                          <value name="VALUE">
+                            <shadow type="text" id="pd`j0Qh%hTVo?i[+;k}d">
+                              <field name="TEXT">gfhgfhfhgfghfghfhgfhgfghfhgf</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </next>
                     </block>
                   </next>
                 </block>

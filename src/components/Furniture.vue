@@ -80,5 +80,9 @@
     <FurnitureProps
       :furnitureProps="furnitureProps"
       :IdPrefix="`${props.room.name}-${props.furniture.name}-${furnitureId}-`" />
+      
+      <div class="pt-8">
+        <hr class="h-1 bg-gray-300 rounded border-0" />
+      </div>
   </div>
 </template>

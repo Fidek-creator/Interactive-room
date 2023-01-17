@@ -42,8 +42,55 @@
             },
           ],
         },
- 
+        {
+          name: 'Narożnik',
+          variant: [
+            {
+              id: 0,
+              props: [
+                {
+                  name: 'Kolor',
+                  type: 'color',
+                  value: '#599BE7',
+                  values: [
+                    "#599BE7",
+                    "#E70500",
+                    "#2BE73E",
+                  ]
+                }
+              ]
+            },
+            {
+              id: 1,
+            },
+          ],
+        },
       ],
+    },
+    {
+      name:'Salon',
+      furnitures:[
+        {
+          name: 'Sofa',
+          variant:[
+          {
+            id:0,
+            props:[
+              {
+                name: 'Kolor',
+                type: 'color',
+                value: '#599BE7',
+                values: [
+                "#304E70",
+                "#70353C",
+                "#327056",
+              ]
+              }
+            ]
+          }
+          ]
+        }
+      ]
     },
   ];
 
@@ -52,11 +99,11 @@
 </script>
 
 <template>
-  <div class="py-4 px-3 bg-slate-700 flex flex-col">
+  <div class="px-3 bg-slate-700 flex flex-col">
     <a class="items-center pl-2.5 mb-5">
       <span
         class="self-center text-xl text-center font-semibold whitespace-nowrap cursor-default text-gray-400">
-        <p>Aplikacja wspierająca<br />prace projektantów</p>
+        <p>Aplikacja<br />wspierająca prace<br/> projektantów wnętrz<br/> </p>
       </span>
     </a>
 
@@ -68,6 +115,7 @@
       class="text-center text-xl font-semibold text-gray-400">
       <Room v-model="selectedRoom" :room="room" />
     </div>
+    
   </div>
   
 

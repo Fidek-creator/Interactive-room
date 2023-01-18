@@ -57,12 +57,106 @@
                     "#E70500",
                     "#2BE73E",
                   ]
+                },
+                {
+                  name: 'Kolor frontu',
+                  type: 'color',
+                  value: '#599BE7',
+                  values: [
+                    "#599BE7",
+                    "#E70500",
+                    "#2BE73E",
+                  ]
                 }
               ]
             },
             {
               id: 1,
             },
+          ],
+        },
+        {
+          name: 'Zlew',
+          variant: [
+            {
+              id: 0,
+              props: [
+                {
+                  name: 'Kolor frontu',
+                  type: 'color',
+                  value: '#599BE7',
+                  values: [
+                    "#599BE7",
+                    "#E70500",
+                    "#2BE73E",
+                  ]
+                }
+              ]
+            },
+            {
+              id: 1,
+            },
+          ],
+        },
+        {
+          name: 'Kredensy',
+          variant: [
+            {
+              id: 0,
+              props: [
+                {
+                  name: 'Kolor blatu',
+                  type: 'color',
+                  value: '#599BE7',
+                  values: [
+                    "#599BE7",
+                    "#E70500",
+                    "#2BE73E",
+                  ]
+                },
+                {
+                  name: 'Kolor frontu',
+                  type: 'color',
+                  value: '#599BE7',
+                  values: [
+                    "#599BE7",
+                    "#E70500",
+                    "#2BE73E",
+                  ]
+                }
+              ]
+            },
+            {
+              id: 1,
+            },
+          ],
+        },
+        {
+          name: 'Stoły',
+          variant: [
+            {
+              id: 0,
+            },
+            {
+              id: 1,
+            },
+            {
+              id: 2,
+            }
+          ],
+        },
+        {
+          name: 'Krzesła',
+          variant: [
+            {
+              id: 0,
+            },
+            {
+              id: 1,
+            },
+            {
+              id: 2,
+            }
           ],
         },
       ],
@@ -77,7 +171,17 @@
             id:0,
             props:[
               {
-                name: 'Kolor',
+                name: 'Kolor sofy',
+                type: 'color',
+                value: '#599BE7',
+                values: [
+                "#304E70",
+                "#70353C",
+                "#327056",
+              ]
+              },
+              {
+                name: 'Kolor poduszek',
                 type: 'color',
                 value: '#599BE7',
                 values: [
@@ -87,7 +191,27 @@
               ]
               }
             ]
+          },
+          {
+            id:1,
+          },
+          {
+            id:2,
           }
+          ]
+        },
+        {
+          name:"Komody",
+          variant:[
+            {
+              id: 0,
+            },
+            {
+              id: 1,
+            },
+            {
+              id:2,
+            }
           ]
         }
       ]

@@ -49,7 +49,7 @@
               id: 0,
               props: [
                 {
-                  name: 'Kolor',
+                  name: 'Kolor blatu',
                   type: 'color',
                   value: '#599BE7',
                   values: [

@@ -12,7 +12,7 @@
 </script>
 <template>
   <section>
-    <p class="my-2 text-sm font-medium pt-3">Kolor</p>
+    <p class="my-2 text-sm font-medium pt-3">{{props.propDefinition.name}}</p>
 
     <div  class="flex justify-center my-2">
       <div v-for="value in props.propDefinition.values" :key="value">

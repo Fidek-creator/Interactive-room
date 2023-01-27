@@ -51,21 +51,21 @@
                 {
                   name: 'Kolor blatu',
                   type: 'color',
-                  value: '#599BE7',
+                  value: '#007500',
                   values: [
-                    "#599BE7",
-                    "#E70500",
-                    "#2BE73E",
+                    "#007500",
+                    "#C0C0C0",
+                    "#000000",
                   ]
                 },
                 {
                   name: 'Kolor frontu',
                   type: 'color',
-                  value: '#599BE7',
+                  value: '#964B00',
                   values: [
-                    "#599BE7",
-                    "#E70500",
-                    "#2BE73E",
+                    "#964B00",
+                    "#C0C0C0",
+                    "#000000",
                   ]
                 }
               ]
@@ -84,11 +84,11 @@
                 {
                   name: 'Kolor frontu',
                   type: 'color',
-                  value: '#599BE7',
+                  value: '#964B00',
                   values: [
-                    "#599BE7",
-                    "#E70500",
-                    "#2BE73E",
+                    "#964B00",
+                    "#C0C0C0",
+                    "#000000",
                   ]
                 }
               ]
@@ -107,21 +107,21 @@
                 {
                   name: 'Kolor blatu',
                   type: 'color',
-                  value: '#599BE7',
+                  value: '#007500',
                   values: [
-                    "#599BE7",
-                    "#E70500",
-                    "#2BE73E",
+                    "#007500",
+                    "#C0C0C0",
+                    "#000000",
                   ]
                 },
                 {
                   name: 'Kolor frontu',
                   type: 'color',
-                  value: '#599BE7',
+                  value: '#964B00',
                   values: [
-                    "#599BE7",
-                    "#E70500",
-                    "#2BE73E",
+                    "#964B00",
+                    "#C0C0C0",
+                    "#000000",
                   ]
                 }
               ]
@@ -173,21 +173,21 @@
               {
                 name: 'Kolor sofy',
                 type: 'color',
-                value: '#599BE7',
+                value: '#706461',
                 values: [
+                "#706461",
                 "#304E70",
                 "#70353C",
-                "#327056",
               ]
               },
               {
                 name: 'Kolor poduszek',
                 type: 'color',
-                value: '#599BE7',
+                value: '#706461',
                 values: [
+                "#706461",
                 "#304E70",
                 "#70353C",
-                "#327056",
               ]
               }
             ]

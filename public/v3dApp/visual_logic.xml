@@ -1,15 +1,7 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="20.142822265625" scrolly="0" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="false" scrollx="105.91619720458982" scrolly="-681.3000000000001" scale="0.9">
-    <block xmlns="https://developers.google.com/blockly/xml" type="console.log" id="7`Qa{t$EpOJ!+Kz}nz!l" x="388" y="757">
-      <value name="VALUE">
-        <shadow type="text" id="6_5{^(zKNUxXYyck0HLc">
-          <field name="TEXT">This is a Vue app!</field>
-        </shadow>
-      </value>
-    </block>
-  </tab>
-  <tab name="Lists" type="SecondaryTab" active="true" scrollx="-862.3962541958573" scrolly="470.56519407975736" scale="0.48866838803323226">
+  <tab name="main" type="MainTab" active="true" scrollx="105.91619720458982" scrolly="0" scale="0.9"></tab>
+  <tab name="Lists" type="SecondaryTab" active="false" scrollx="-97.05364760341763" scrolly="762.7209569085771" scale="0.7219857701073253">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="rjNfWGwm3h4QP^MGC_m:">lista_Obiektow</variable>
       <variable id="V+}qttxPN4mX[2-f)EV7">Fridges</variable>
@@ -1346,7 +1338,7 @@
       </next>
     </block>
   </tab>
-  <tab name="Functions" type="SecondaryTab" active="false" scrollx="407.8952026367189" scrolly="-403.77559661865314" scale="1">
+  <tab name="Functions" type="SecondaryTab" active="false" scrollx="461.54309645997125" scrolly="-14.660051640996974" scale="0.4886683880332325">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="YtkyWwkQn/:sO{F${sBL">x</variable>
       <variable id="rjNfWGwm3h4QP^MGC_m:">lista_Obiektow</variable>
@@ -1706,8 +1698,8 @@
       </value>
     </block>
   </tab>
-  <tab name="HTML" type="SecondaryTab" active="false" scrollx="303.92303214449646" scrolly="216.34235629524036" scale="0.6181210179864011">
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="H{%Dn+43$Sj#*rk$l$%)" x="-70" y="-350">
+  <tab name="HTML" type="SecondaryTab" active="false" scrollx="443.40694885871017" scrolly="286.533982726714" scale="0.7513299606188328">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="H{%Dn+43$Sj#*rk$l$%)" x="-650" y="-610">
       <field name="EVENT">click</field>
       <field name="PARENT">FALSE</field>
       <value name="ID">
@@ -1766,10 +1758,42 @@
               </value>
             </block>
           </statement>
+          <next>
+            <block type="eventHTMLElem" id="ZOeE(@^sfPn]@d5o=}JO">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="XPiqt==2Y~Xs#[D-:uPF">
+                  <field name="TEXT">back</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="tweenCameraExt" id="3b?B2iBi3^qp|Za.75A@">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" whenfinishedslot="false"></mutation>
+                  <field name="MOVEMENT_TYPE">SPHERICAL</field>
+                  <value name="POSITION">
+                    <block type="objectList" id="P`UX91#:c;EF+KX/sGl?">
+                      <field name="FIELDNAME">Kamera.pozycja.stol</field>
+                    </block>
+                  </value>
+                  <value name="LOOKAT">
+                    <block type="objectList" id="vEdWUDv{-Bq;BQ*-nDh4">
+                      <field name="FIELDNAME">Kamera.kierunek.stol</field>
+                    </block>
+                  </value>
+                  <value name="DURATION">
+                    <shadow type="math_number" id="Jsq*1CAf^{!BY*(wL?e^">
+                      <field name="NUM">2</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="setHTMLElemAttribute" id=";lt.,H{6#!SF`~Y+IgJT" x="-30" y="-90">
+    <block xmlns="https://developers.google.com/blockly/xml" type="setHTMLElemAttribute" id=";lt.,H{6#!SF`~Y+IgJT" x="450" y="-610">
       <field name="ATTRIBUTE">value</field>
       <field name="PARENT">FALSE</field>
       <value name="VALUE">
@@ -1879,7 +1903,7 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="010P{0/EF~HknK(S/aw-" x="-50" y="230">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="010P{0/EF~HknK(S/aw-" x="-630" y="-250">
       <field name="EVENT">click</field>
       <field name="PARENT">FALSE</field>
       <value name="ID">
@@ -1945,27 +1969,309 @@
                       <field name="FIELDNAME">lodowka.moja</field>
                     </shadow>
                   </value>
-                  <next>
-                    <block type="assignMaterial" id="}tgaRC`I=#rP=#T9ojq}" disabled="true">
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="NjP/Uq2;^2I*3!/hX2?^" x="70" y="-250">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="S-*vps(3__:D0I,p:;h~">
+          <field name="TEXT">Kuchnia-Narożnik-0-Kolor blatu-007500</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="cEK%dKF{A5D.p~//f}2.">
+          <value name="VALUE2">
+            <shadow type="materialList" id="gU(:3Th-AysO#mfnDU{@">
+              <field name="FIELDNAME">Zielony_top_naroznik</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="v9K4qz$a7kY`{eK-cB-p">
+              <field name="FIELDNAME">naroznik.moj.blat</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="UE(xFatxMpTnRo5Wr$aj">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id=",![hRmBdLfRO/A.EZE)O">
+              <field name="TEXT">Kuchnia-Narożnik-0-Kolor blatu-C0C0C0</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="@![(9mf`V|1AQ;;%g}cv">
+              <value name="VALUE2">
+                <shadow type="materialList" id="@quYHsbE!B;M@]Oj-[MQ">
+                  <field name="FIELDNAME">Bialy_top_naroznik</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="gZLp(PHCgYX2lodQyB}R">
+                  <field name="FIELDNAME">naroznik.moj.blat</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="Kd#2lR3Lud_jF7w44%j1">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id=".nh_)VHyCa]iaJPbVqqK">
+                  <field name="TEXT">Kuchnia-Narożnik-0-Kolor blatu-000000</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="|MB2novw,^`7x4Vh,i*#">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="k5+Jnr]fr;ZS8W0cPN^Y">
+                      <field name="FIELDNAME">Czarny_top_naroznik</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="3KCLuM-P#hkBFd=XE339">
+                      <field name="FIELDNAME">naroznik.moj.blat</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="_FX4oxtn8MH#%9m--czn">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text" id="U-F`N_7Ixh`ykzl{OJGH">
+                      <field name="TEXT">Kuchnia-Narożnik-0-Kolor frontu-964B00</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="assignMaterial" id="@71q9Je1r=l8XQj@6q7A">
                       <value name="VALUE2">
-                        <shadow type="materialList" id="YBgHRjMr)4:r?sW~#PMm">
-                          <field name="FIELDNAME">Niebieski_lodowka</field>
+                        <shadow type="materialList" id="Vr,`qOrg}SIbyNfi?(A=">
+                          <field name="FIELDNAME">Drewno.1</field>
                         </shadow>
                       </value>
                       <value name="VALUE1">
-                        <shadow type="objectList" id="%C)!:fUFZo|uk%u/G#Yi">
-                          <field name="FIELDNAME">lodowka.moja</field>
+                        <shadow type="objectList" id="@lUolRzM#D4jLw8+jPL~">
+                          <field name="FIELDNAME">naroznik.moj</field>
                         </shadow>
                       </value>
                       <next>
-                        <block type="console.log" id="afu{j--_q~Wm8z{Q2=2_">
-                          <value name="VALUE">
-                            <shadow type="text" id="pd`j0Qh%hTVo?i[+;k}d">
-                              <field name="TEXT">gfhgfhfhgfghfghfhgfhgfghfhgf</field>
+                        <block type="assignMaterial" id="Hzs{.}h)_6X3ge!l:hDf">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="Z)rjC,7gA2XismU1_?1v">
+                              <field name="FIELDNAME">Drewno.1</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id=");u565lPJZIR(g;vbfHj">
+                              <field name="FIELDNAME">naroznik.moj.dol</field>
                             </shadow>
                           </value>
                         </block>
                       </next>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="eventHTMLElem" id="I#c9iEuM#Rk_oPx~roe/">
+                      <field name="EVENT">click</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="ID">
+                        <shadow type="text" id="F}TgyG.`2L}q|ht`wx_w">
+                          <field name="TEXT">Kuchnia-Narożnik-0-Kolor frontu-C0C0C0</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="assignMaterial" id="2)0)ObC9nGa7NAhxP[qV">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="1+Lsx#eGx|niQ#0ZgL]?">
+                              <field name="FIELDNAME">Drewno.2</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="1ky{M-W],B-Uk8nf-z^x">
+                              <field name="FIELDNAME">naroznik.moj</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id=";s8;#I@]kvDTu2AZoOla">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="+d*$wXDZnz}lyAe~)v`@">
+                                  <field name="FIELDNAME">Drewno.2</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="7Y!}GZk4Xxp)Jeb7;Bdx">
+                                  <field name="FIELDNAME">naroznik.moj.dol</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="eventHTMLElem" id="-dn32Z~Lyol7f;vHqWpj">
+                          <field name="EVENT">click</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="ID">
+                            <shadow type="text" id="]tpBtf4y4VL[:9l4^M0a">
+                              <field name="TEXT">Kuchnia-Narożnik-0-Kolor frontu-000000</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="assignMaterial" id="+NnQi_mCemz@4pD)c^bL">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="}{@HZPRsnAn_^FqjwnMQ">
+                                  <field name="FIELDNAME">Drewno.3</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="Hc:U3+X2AKoU_|3:0wR,">
+                                  <field name="FIELDNAME">naroznik.moj</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id="ySK4#$;rB@Px^7v|JYy=">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList" id="dxbr0nnHx(jgblA$7a!t">
+                                      <field name="FIELDNAME">Drewno.3</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList" id="NRRT_PC8S:w}tZqI`O|{">
+                                      <field name="FIELDNAME">naroznik.moj.dol</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="-^D`8nD*c+OhSaY%,Po*" x="830" y="-250">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="b]F]dg*t,1^]#Opr+V,l">
+          <field name="TEXT">Kuchnia-Zlew-0-Kolor frontu-964B00</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="`:KAtr4b^DoG1g[ZtOjN">
+          <value name="VALUE2">
+            <shadow type="materialList" id="HDF8~q./sN)Sxor~()Se">
+              <field name="FIELDNAME">Drewno.1</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="$iYn#t]kQd)=1pAKm%bO">
+              <field name="FIELDNAME">zlew.moj.baza</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="assignMaterial" id="0;*M?`EM)O;?r^e6Ey5p">
+              <value name="VALUE2">
+                <shadow type="materialList" id="[@Z45q^B%WO~vL2f#E*0">
+                  <field name="FIELDNAME">Drewno.1</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="Kfl6O?L$l$cDp:#9kZ;g">
+                  <field name="FIELDNAME">zlew.moj.dol</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="w|Oe2#}GgY;.G+(eTwCg">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="[3OXy0Wf?~BxrzFYc0%b">
+              <field name="TEXT">Kuchnia-Zlew-0-Kolor frontu-C0C0C0</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="Ty3_65SHNXwaa(%@~cmV">
+              <value name="VALUE2">
+                <shadow type="materialList" id="mWLZ+P/.429ni%mzeaB_">
+                  <field name="FIELDNAME">Drewno.2</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="71wqsmK.mNLD#=c:D@_/">
+                  <field name="FIELDNAME">zlew.moj.baza</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="assignMaterial" id="vhXfP!.h5Us5.wi|4+{!">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="_ZUT:x_n=d/A(nXsr`9~">
+                      <field name="FIELDNAME">Drewno.2</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="NStYj|7V*cANW$y#~9a7">
+                      <field name="FIELDNAME">zlew.moj.dol</field>
+                    </shadow>
+                  </value>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="|l{S;0cttvpg$|1Qetu$">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="Hpu7aEg4`WIue.).IwES">
+                  <field name="TEXT">Kuchnia-Zlew-0-Kolor frontu-000000</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="*5%6vDK9oewXh0?tRov(">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="2.jDoWZ^oio)^OJ8Ryns">
+                      <field name="FIELDNAME">Drewno.3</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="Ae?s^}]rXpv_r+d}2I+U">
+                      <field name="FIELDNAME">zlew.moj.baza</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="assignMaterial" id="vQS|`Oe}qC4m{Yo/Xcl{">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="L95QL9~0nw%Z2Nun;C^X">
+                          <field name="FIELDNAME">Drewno.3</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="c9I72w:[nc{Gx+A}ya)e">
+                          <field name="FIELDNAME">zlew.moj.dol</field>
+                        </shadow>
+                      </value>
                     </block>
                   </next>
                 </block>
@@ -1975,14 +2281,364 @@
         </block>
       </next>
     </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="nruXMM/2/d~o3xP/E0|a" x="1570" y="-250">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="m~8N[LuAv+M_TG/vVC*G">
+          <field name="TEXT">Kuchnia-Kredensy-0-Kolor blatu-007500</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="C,=H%wgwtpI2G.0g_^hB">
+          <value name="VALUE2">
+            <shadow type="materialList" id="Zv97LJ$}c(P$-~yEa|HV">
+              <field name="FIELDNAME">Zielony_top_naroznik</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="wUzAjNG_)MW82g#tw,*H">
+              <field name="FIELDNAME">kredens.moj.blat</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="U{DAOit}EdbhEH(p)-H/">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="aoj+4*EnSM.~T?`EBaL8">
+              <field name="TEXT">Kuchnia-Kredensy-0-Kolor blatu-C0C0C0</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="LI|)3RX(igpVH|]JN6%z">
+              <value name="VALUE2">
+                <shadow type="materialList" id="~mJFv.S#-4?ttdaZPN6T">
+                  <field name="FIELDNAME">Bialy_top_naroznik</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="h{!v*rm41?#~OkY6+h~b">
+                  <field name="FIELDNAME">kredens.moj.blat</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="JwE/g=%P*1iRSsGDO5cm">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="{M,7twnPY7/`|lim##kJ">
+                  <field name="TEXT">Kuchnia-Kredensy-0-Kolor blatu-000000</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="%toRaepQv^E!=!+=ArF/">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="nKj05)|f/|!qT~Qz(=0C">
+                      <field name="FIELDNAME">Czarny_top_naroznik</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="dnTKMs)J#P`Ey3p4Si71">
+                      <field name="FIELDNAME">kredens.moj.blat</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="B)tl8^Xa:`{J,9{4J,^V">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text" id="-w{nRW,Av0KqyP*L40GX">
+                      <field name="TEXT">Kuchnia-Kredensy-0-Kolor frontu-964B00</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="assignMaterial" id="yOM)%.d;?_2[6g=U*Kjf">
+                      <value name="VALUE2">
+                        <shadow type="materialList" id="W=lsTv^Z!I%e/$h;[bY8">
+                          <field name="FIELDNAME">Drewno.1</field>
+                        </shadow>
+                      </value>
+                      <value name="VALUE1">
+                        <shadow type="objectList" id="3;kfEpd54c0OJ!|n91?r">
+                          <field name="FIELDNAME">kredens.moj.baza</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="assignMaterial" id="z]Q-@GTtDRF9kInCNA#=">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="oDvSvzzc_@GDA=/%rSzV">
+                              <field name="FIELDNAME">Drewno.1</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="z6Sjblw_)Qi1iBsHaJZg">
+                              <field name="FIELDNAME">kredens.moj.dol</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="eventHTMLElem" id="W{uqy1p1nc/D1TR:/?L_">
+                      <field name="EVENT">click</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="ID">
+                        <shadow type="text" id="XhP1/^q.UgY%{NvTw79:">
+                          <field name="TEXT">Kuchnia-Kredensy-0-Kolor frontu-C0C0C0</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="assignMaterial" id="kLGM[[|i$Hok?bD,Hpg;">
+                          <value name="VALUE2">
+                            <shadow type="materialList" id="Zt.^%2zNq]-)p5JvwC#Z">
+                              <field name="FIELDNAME">Drewno.2</field>
+                            </shadow>
+                          </value>
+                          <value name="VALUE1">
+                            <shadow type="objectList" id="0;Jr`]?=dvOHtd:io6NG">
+                              <field name="FIELDNAME">kredens.moj.baza</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="assignMaterial" id="4}d-9cMFlnPsM[!(Q~X;">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="6Yyd80Q+?UceRQjAvLg]">
+                                  <field name="FIELDNAME">Drewno.2</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="/vx0KG8%HHwrlI)xO=fk">
+                                  <field name="FIELDNAME">kredens.moj.dol</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="eventHTMLElem" id="B}X8?)XJ{I2s/faTU)C9">
+                          <field name="EVENT">click</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="ID">
+                            <shadow type="text" id="8c%.H,B/!3LoByFGo|6l">
+                              <field name="TEXT">Kuchnia-Kredensy-0-Kolor frontu-000000</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="assignMaterial" id="t!fPyUjaQ*S87lm-s_Sp">
+                              <value name="VALUE2">
+                                <shadow type="materialList" id="McW^bEUz!+CQFza;s$.(">
+                                  <field name="FIELDNAME">Drewno.3</field>
+                                </shadow>
+                              </value>
+                              <value name="VALUE1">
+                                <shadow type="objectList" id="xtt!^UcX12-{GI/cG%`F">
+                                  <field name="FIELDNAME">kredens.moj.baza</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="assignMaterial" id=")H.DbjkvF1eAo`PergVW">
+                                  <value name="VALUE2">
+                                    <shadow type="materialList" id="4}yj+V-sfg}]E7J{)H9g">
+                                      <field name="FIELDNAME">Drewno.3</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE1">
+                                    <shadow type="objectList" id="kX(JPBu3aE-XW*58Bq(]">
+                                      <field name="FIELDNAME">kredens.moj.dol</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="9jO~EKcIQXV1@/ihkGg/" x="-670" y="470">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="PZu%/co_CVga9o0BqP(,">
+          <field name="TEXT">Salon-Sofa-0-Kolor sofy-706461</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="!jmy%ZG#N5K#{L*=vmT;">
+          <value name="VALUE2">
+            <shadow type="materialList" id="?O0UOCC0dQi(;ydtPdET">
+              <field name="FIELDNAME">sofa.moja.szara</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="k_:bj+A6#|e6|yg=9CN{">
+              <field name="FIELDNAME">sofa.moja</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="bKfPhbl/PrEDd=XI7Nji">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="]1dGV:Q#]%Ay:32;f`^U">
+              <field name="TEXT">Salon-Sofa-0-Kolor sofy-304E70</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="|!`7xVqH?a=3r[8J.fx3">
+              <value name="VALUE2">
+                <shadow type="materialList" id=".(~?D+acv6~7J[5YI`go">
+                  <field name="FIELDNAME">sofa.moja.niebieska</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="USx;bG=u60YQnsXZ!ks*">
+                  <field name="FIELDNAME">sofa.moja</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="YYmp@c{Fp.GwdbeyzW(b">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="Rjs/F5,e^vM@D1e-FQ]D">
+                  <field name="TEXT">Salon-Sofa-0-Kolor sofy-70353C</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="x+%Y/+^4Y:0G6o!;#(K[">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="i|T)V!2YvsPXl6uJ;7$w">
+                      <field name="FIELDNAME">sofa.moja.czerwona</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="zp:mFCkgq?Ru7o(;G^?s">
+                      <field name="FIELDNAME">sofa.moja</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="xz-+`)|T-Nz3,=V@YPeB" x="-670" y="790">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="KKejO+:FI%;jz:(t/KLr">
+          <field name="TEXT">Salon-Sofa-0-Kolor poduszek-706461</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="yrX[i-*MXy+Nx{Q,$9.`">
+          <value name="VALUE2">
+            <shadow type="materialList" id="A1*TO11k3YC@2+rWXeUg">
+              <field name="FIELDNAME">sofa.moja.szara</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="@:7rIV[5*=Gh86ZS|7Pt">
+              <field name="FIELDNAME">poduszki</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="0jzqlgY~rVuazG?y{Z[V">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="9Wr@SRIX8F%NicOZWT+Z">
+              <field name="TEXT">Salon-Sofa-0-Kolor poduszek-304E70</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="assignMaterial" id="w3whD6PJBAMJce._(1T;">
+              <value name="VALUE2">
+                <shadow type="materialList" id="svE;3b5p$[U/Y92QE,2,">
+                  <field name="FIELDNAME">sofa.moja.niebieska</field>
+                </shadow>
+              </value>
+              <value name="VALUE1">
+                <shadow type="objectList" id="@Ys#H5|B}Q2PpnDpIKM6">
+                  <field name="FIELDNAME">poduszki</field>
+                </shadow>
+              </value>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="/l{JdXtQNrMW,uKNMNST">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <shadow type="text" id="]bI+_AoXlM7NHO14Fn=F">
+                  <field name="TEXT">Salon-Sofa-0-Kolor poduszek-70353C</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="assignMaterial" id="=n:yc;-@?2!P[?s;M~t-">
+                  <value name="VALUE2">
+                    <shadow type="materialList" id="$~0~GQ.Pp},FR-.xUh`M">
+                      <field name="FIELDNAME">sofa.moja.czerwona</field>
+                    </shadow>
+                  </value>
+                  <value name="VALUE1">
+                    <shadow type="objectList" id="xkua6;GN%7][(sP}?U5,">
+                      <field name="FIELDNAME">poduszki</field>
+                    </shadow>
+                  </value>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
   </tab>
-  <tab name="Functions_usage" type="SecondaryTab" active="false" scrollx="277.5018920898437" scrolly="-10" scale="1">
+  <tab name="Functions_usage" type="SecondaryTab" active="false" scrollx="70.70711390352244" scrolly="-87.47709510634746" scale="0.7462153966366272">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="!.$GQl,pvI@?4xQyQl4e">FridgeID</variable>
+      <variable id="^OTG:1LNLv*Lm(?aZDDI">CornersID</variable>
+      <variable id="}!.=Fu-0]HcuAbH++`vz">SinksID</variable>
+      <variable id="SZZAx#QgE`3!a]6SxI[+">CupboardsID</variable>
+      <variable id="`o8{+TD3E*V}7X-8lD?k">Dining_tablesID</variable>
+      <variable id="1b0mNcDMf+FQ:MY?tH#u">Dining_chairsID</variable>
+      <variable id="|fcnNuy,nrDBA!D1+^5!">SofasID</variable>
+      <variable id="[br_Qk7dr3S,8ZL=Qn|H">DressersID</variable>
       <variable id="rjNfWGwm3h4QP^MGC_m:">lista_Obiektow</variable>
       <variable id="[dQ{:g7CP:#DXkS=(XES">aktualnie_wybrany_ID</variable>
       <variable id="n(/O-[@i3tbs:g#ah]qQ">wartość</variable>
       <variable id="V+}qttxPN4mX[2-f)EV7">Fridges</variable>
+      <variable id="2f)4/l:|/waOajNI@KLk">Corners</variable>
+      <variable id="WjMx^AYlA^PK9s^^#CqS">Sinks</variable>
+      <variable id="YpN|L+cNsl0J1hrp(UzD">Cupboards</variable>
+      <variable id="2vBQ}-e-!6D(HUu8%#hx">Dining_table</variable>
+      <variable id="W![{;1G-!g[)KIPXvse#">Dinig_chairs</variable>
+      <variable id="Q^b][6_HHBuP]t0KY)]n">Sofas</variable>
+      <variable id="S3,oeM5s=maWIS]m@|Tu">Dressers</variable>
     </variables>
     <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="1vRQC#;DqO-v.CMjA6}T" x="10" y="10">
       <field name="EVENT">click</field>
@@ -2052,6 +2708,552 @@
                   </value>
                   <value name="ARG2">
                     <block type="math_number" id="G$xu*FY:U#uxd1v_$dla">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="*(1jtdkyV1GJ5$#W{p%k" x="570" y="10">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="5|I!nrSiRi%$8zkW_Tv~">
+          <field name="TEXT">Kuchnia.Narożnik.prev</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="j2#w)lq_Sd31GpD]NLha">
+          <field name="VAR" id="^OTG:1LNLv*Lm(?aZDDI">CornersID</field>
+          <value name="VALUE">
+            <block type="procedures_callreturn" id="Kp6oc7z[2f1Xe%W=5WEG">
+              <mutation name="changeFurniture">
+                <arg name="lista_Obiektow"></arg>
+                <arg name="aktualnie_wybrany_ID"></arg>
+                <arg name="wartość"></arg>
+              </mutation>
+              <value name="ARG0">
+                <block type="variables_get" id="z*Cwj0*R{:dhDhw9-o9w">
+                  <field name="VAR" id="2f)4/l:|/waOajNI@KLk">Corners</field>
+                </block>
+              </value>
+              <value name="ARG1">
+                <block type="variables_get" id="EgsjX_jGM@P]L4w|10*P">
+                  <field name="VAR" id="^OTG:1LNLv*Lm(?aZDDI">CornersID</field>
+                </block>
+              </value>
+              <value name="ARG2">
+                <block type="math_number" id="h;mStK}Zn`qfE[fL%wYu">
+                  <field name="NUM">-1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="sh#.KWP}0[OCxY1Whmmm">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="tYU0bmI{UmmkZ*Tg!SZi">
+              <field name="TEXT">Kuchnia.Narożnik.next</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="variables_set" id="RVAhR99}LKg},Ug6YKME">
+              <field name="VAR" id="^OTG:1LNLv*Lm(?aZDDI">CornersID</field>
+              <value name="VALUE">
+                <block type="procedures_callreturn" id="p{/otMpXU7|DxmHjL)9M">
+                  <mutation name="changeFurniture">
+                    <arg name="lista_Obiektow"></arg>
+                    <arg name="aktualnie_wybrany_ID"></arg>
+                    <arg name="wartość"></arg>
+                  </mutation>
+                  <value name="ARG0">
+                    <block type="variables_get" id="`OC{@-U^aQ-rmY@Fcq6;">
+                      <field name="VAR" id="2f)4/l:|/waOajNI@KLk">Corners</field>
+                    </block>
+                  </value>
+                  <value name="ARG1">
+                    <block type="variables_get" id="CY`FI#[ToK-7/9l;/]y!">
+                      <field name="VAR" id="^OTG:1LNLv*Lm(?aZDDI">CornersID</field>
+                    </block>
+                  </value>
+                  <value name="ARG2">
+                    <block type="math_number" id="U:Jcpyd]u6o6v(FwD3nk">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="7IJiX3)AOxchjqRghD|d" x="1130" y="10">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="p$x7HMk$A0Op-5?nE@ph">
+          <field name="TEXT">Kuchnia.Zlew.prev</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="_;l/DU4/Y5vYsBZcJTbs">
+          <field name="VAR" id="}!.=Fu-0]HcuAbH++`vz">SinksID</field>
+          <value name="VALUE">
+            <block type="procedures_callreturn" id="qgXB3Qzq:7WDkjVx7yaH">
+              <mutation name="changeFurniture">
+                <arg name="lista_Obiektow"></arg>
+                <arg name="aktualnie_wybrany_ID"></arg>
+                <arg name="wartość"></arg>
+              </mutation>
+              <value name="ARG0">
+                <block type="variables_get" id="}S]G?FmDmol6ZCDq5KT}">
+                  <field name="VAR" id="WjMx^AYlA^PK9s^^#CqS">Sinks</field>
+                </block>
+              </value>
+              <value name="ARG1">
+                <block type="variables_get" id="3]s:;8,PkH2u8z-6H[zA">
+                  <field name="VAR" id="}!.=Fu-0]HcuAbH++`vz">SinksID</field>
+                </block>
+              </value>
+              <value name="ARG2">
+                <block type="math_number" id="^;^eO5Z(!?D;KTa2at:K">
+                  <field name="NUM">-1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="X2(2aTwo[x;24Z(nI]QB">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="T.4!qG|?4g$oDkb2qcMH">
+              <field name="TEXT">Kuchnia.Zlew.next</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="variables_set" id="{.P@!H?!H^T?wb21_zp%">
+              <field name="VAR" id="}!.=Fu-0]HcuAbH++`vz">SinksID</field>
+              <value name="VALUE">
+                <block type="procedures_callreturn" id="nlb_o3axluFQO0Jx9eB#">
+                  <mutation name="changeFurniture">
+                    <arg name="lista_Obiektow"></arg>
+                    <arg name="aktualnie_wybrany_ID"></arg>
+                    <arg name="wartość"></arg>
+                  </mutation>
+                  <value name="ARG0">
+                    <block type="variables_get" id="a*8vC/P?|@7x@esr;sp_">
+                      <field name="VAR" id="WjMx^AYlA^PK9s^^#CqS">Sinks</field>
+                    </block>
+                  </value>
+                  <value name="ARG1">
+                    <block type="variables_get" id=":8r+|2hIveIsG(X5yk92">
+                      <field name="VAR" id="}!.=Fu-0]HcuAbH++`vz">SinksID</field>
+                    </block>
+                  </value>
+                  <value name="ARG2">
+                    <block type="math_number" id="/kvH}?tto}?RE+2lYIF7">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="t|s#Tl_b4=gO$@U,J)tU" x="1670" y="10">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="zIc#!w[=nHhy,3n7~7iK">
+          <field name="TEXT">Kuchnia.Kredensy.prev</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="I/Vi1CpPB=+nN]zrO!rU">
+          <field name="VAR" id="SZZAx#QgE`3!a]6SxI[+">CupboardsID</field>
+          <value name="VALUE">
+            <block type="procedures_callreturn" id="DJ,f[4pteZ#Z!=^pZ=%*">
+              <mutation name="changeFurniture">
+                <arg name="lista_Obiektow"></arg>
+                <arg name="aktualnie_wybrany_ID"></arg>
+                <arg name="wartość"></arg>
+              </mutation>
+              <value name="ARG0">
+                <block type="variables_get" id="E/eRVrUI}fS^BF4$nzYe">
+                  <field name="VAR" id="YpN|L+cNsl0J1hrp(UzD">Cupboards</field>
+                </block>
+              </value>
+              <value name="ARG1">
+                <block type="variables_get" id="F~o2Y1W2gM)jjTfR9Nvi">
+                  <field name="VAR" id="SZZAx#QgE`3!a]6SxI[+">CupboardsID</field>
+                </block>
+              </value>
+              <value name="ARG2">
+                <block type="math_number" id=")5jOg1W~=x8Zz~~MH(k3">
+                  <field name="NUM">-1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="0XHF0$t+gsI;[NF{yJ:!">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="-8,$S1vE%gN_dV2^Q28b">
+              <field name="TEXT">Kuchnia.Kredensy.next</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="variables_set" id="gE~uR,7B($Z}pIuy+E-6">
+              <field name="VAR" id="SZZAx#QgE`3!a]6SxI[+">CupboardsID</field>
+              <value name="VALUE">
+                <block type="procedures_callreturn" id="oPq-Bc^xG]ju{1dG-0nQ">
+                  <mutation name="changeFurniture">
+                    <arg name="lista_Obiektow"></arg>
+                    <arg name="aktualnie_wybrany_ID"></arg>
+                    <arg name="wartość"></arg>
+                  </mutation>
+                  <value name="ARG0">
+                    <block type="variables_get" id="a}zpuDLG~)(Z=Bniqp)E">
+                      <field name="VAR" id="YpN|L+cNsl0J1hrp(UzD">Cupboards</field>
+                    </block>
+                  </value>
+                  <value name="ARG1">
+                    <block type="variables_get" id="J]8NZ{[A2y$(TPr@VCE|">
+                      <field name="VAR" id="SZZAx#QgE`3!a]6SxI[+">CupboardsID</field>
+                    </block>
+                  </value>
+                  <value name="ARG2">
+                    <block type="math_number" id="4?}UgP;zu%O6e}g95dfY">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="^=vlc)B]A#hV/UmXderB" x="2230" y="10">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="6A}U((tb%E*B9dC4=W`v">
+          <field name="TEXT">Kuchnia.Stoły.prev</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="C}fhrMGN;]yIo(a:wB(d">
+          <field name="VAR" id="`o8{+TD3E*V}7X-8lD?k">Dining_tablesID</field>
+          <value name="VALUE">
+            <block type="procedures_callreturn" id="s%=QV[YtTY?O2Yyf$NYk">
+              <mutation name="changeFurniture">
+                <arg name="lista_Obiektow"></arg>
+                <arg name="aktualnie_wybrany_ID"></arg>
+                <arg name="wartość"></arg>
+              </mutation>
+              <value name="ARG0">
+                <block type="variables_get" id="q7oP~H3(plQPj2fMRoS5">
+                  <field name="VAR" id="2vBQ}-e-!6D(HUu8%#hx">Dining_table</field>
+                </block>
+              </value>
+              <value name="ARG1">
+                <block type="variables_get" id="V{Q{|IfVg;T0=lWe3r3O">
+                  <field name="VAR" id="`o8{+TD3E*V}7X-8lD?k">Dining_tablesID</field>
+                </block>
+              </value>
+              <value name="ARG2">
+                <block type="math_number" id="x[+HmMX$/p6cnsU9@R5p">
+                  <field name="NUM">-1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="Mf.#r;4^Mk#WyZxv^G6[">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="u3EU}ZS$r}fow+^Sj;co">
+              <field name="TEXT">Kuchnia.Stoły.next</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="variables_set" id="C!FQ)z%9cgo#kz8z5!sn">
+              <field name="VAR" id="`o8{+TD3E*V}7X-8lD?k">Dining_tablesID</field>
+              <value name="VALUE">
+                <block type="procedures_callreturn" id="A]OJ|4!,#{,%(?NyNbNr">
+                  <mutation name="changeFurniture">
+                    <arg name="lista_Obiektow"></arg>
+                    <arg name="aktualnie_wybrany_ID"></arg>
+                    <arg name="wartość"></arg>
+                  </mutation>
+                  <value name="ARG0">
+                    <block type="variables_get" id="r^(i}xFILW~IOtK)=XI;">
+                      <field name="VAR" id="2vBQ}-e-!6D(HUu8%#hx">Dining_table</field>
+                    </block>
+                  </value>
+                  <value name="ARG1">
+                    <block type="variables_get" id="wr^(*!9=(D%Cf{KH,UfT">
+                      <field name="VAR" id="`o8{+TD3E*V}7X-8lD?k">Dining_tablesID</field>
+                    </block>
+                  </value>
+                  <value name="ARG2">
+                    <block type="math_number" id="8SoXxS~:Nq#9ZWyik:eU">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="S4o:otT%k0@NHHAD7ZFJ" x="2810" y="10">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="QD3m(OB5cD]iy3Vz)PRk">
+          <field name="TEXT">Kuchnia.Krzesła.prev</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="ITVEUK*7b;a_@jjoIkr6">
+          <field name="VAR" id="1b0mNcDMf+FQ:MY?tH#u">Dining_chairsID</field>
+          <value name="VALUE">
+            <block type="procedures_callreturn" id="BMq_Hr?(`)VqNv+(hv2T">
+              <mutation name="changeFurniture">
+                <arg name="lista_Obiektow"></arg>
+                <arg name="aktualnie_wybrany_ID"></arg>
+                <arg name="wartość"></arg>
+              </mutation>
+              <value name="ARG0">
+                <block type="variables_get" id="u=00$aixG0R5A7xn[bdo">
+                  <field name="VAR" id="W![{;1G-!g[)KIPXvse#">Dinig_chairs</field>
+                </block>
+              </value>
+              <value name="ARG1">
+                <block type="variables_get" id="HV$wK$nD3R]9hh7+96$X">
+                  <field name="VAR" id="1b0mNcDMf+FQ:MY?tH#u">Dining_chairsID</field>
+                </block>
+              </value>
+              <value name="ARG2">
+                <block type="math_number" id="%?!8,k[er:wMft1EFNuX">
+                  <field name="NUM">-1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="1gMsW;s,1F[HBm6on;:O">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="F,}+,Cs.wAz_DD?iN0`F">
+              <field name="TEXT">Kuchnia.Krzesła.next</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="variables_set" id="@TMqf,/J*E47}LGSyT*V">
+              <field name="VAR" id="1b0mNcDMf+FQ:MY?tH#u">Dining_chairsID</field>
+              <value name="VALUE">
+                <block type="procedures_callreturn" id="kdIKHtsM*VJr_r+p3x4@">
+                  <mutation name="changeFurniture">
+                    <arg name="lista_Obiektow"></arg>
+                    <arg name="aktualnie_wybrany_ID"></arg>
+                    <arg name="wartość"></arg>
+                  </mutation>
+                  <value name="ARG0">
+                    <block type="variables_get" id="97zAM/;]eIh5l[)Q,!1S">
+                      <field name="VAR" id="W![{;1G-!g[)KIPXvse#">Dinig_chairs</field>
+                    </block>
+                  </value>
+                  <value name="ARG1">
+                    <block type="variables_get" id="Si9tMddP;/TWLGcfIK;I">
+                      <field name="VAR" id="1b0mNcDMf+FQ:MY?tH#u">Dining_chairsID</field>
+                    </block>
+                  </value>
+                  <value name="ARG2">
+                    <block type="math_number" id="2L.;!;T*K+U%oo|K4{ZY">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="5upP`yx6t)QUa+VcQcd9" x="10" y="410">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="(HUUt4?YGM:okKmLa4`^">
+          <field name="TEXT">Salon.Sofa.prev</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="V:|lq!8vSqZLO}8;E3~d">
+          <field name="VAR" id="|fcnNuy,nrDBA!D1+^5!">SofasID</field>
+          <value name="VALUE">
+            <block type="procedures_callreturn" id="owGc]8)Ygal31;nF%VbZ">
+              <mutation name="changeFurniture">
+                <arg name="lista_Obiektow"></arg>
+                <arg name="aktualnie_wybrany_ID"></arg>
+                <arg name="wartość"></arg>
+              </mutation>
+              <value name="ARG0">
+                <block type="variables_get" id="M(U8Nani.h#fz@Cfqx;m">
+                  <field name="VAR" id="Q^b][6_HHBuP]t0KY)]n">Sofas</field>
+                </block>
+              </value>
+              <value name="ARG1">
+                <block type="variables_get" id="H$s;FYm9=yi4IPgxe8tA">
+                  <field name="VAR" id="|fcnNuy,nrDBA!D1+^5!">SofasID</field>
+                </block>
+              </value>
+              <value name="ARG2">
+                <block type="math_number" id="=QcCZkrUt,3c3N@2V^3H">
+                  <field name="NUM">-1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="^FJ/T8B5TLIrTyaK,(,X">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="XNrqNiorG|.^4BlCy{|d">
+              <field name="TEXT">Salon.Sofa.next</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="variables_set" id="=f!LVu,-me^i0bNDU*K^">
+              <field name="VAR" id="|fcnNuy,nrDBA!D1+^5!">SofasID</field>
+              <value name="VALUE">
+                <block type="procedures_callreturn" id="DMm!=FUR_2+b)b#o##iq">
+                  <mutation name="changeFurniture">
+                    <arg name="lista_Obiektow"></arg>
+                    <arg name="aktualnie_wybrany_ID"></arg>
+                    <arg name="wartość"></arg>
+                  </mutation>
+                  <value name="ARG0">
+                    <block type="variables_get" id="?)+3:h-3.nOPc/0pVc;J">
+                      <field name="VAR" id="Q^b][6_HHBuP]t0KY)]n">Sofas</field>
+                    </block>
+                  </value>
+                  <value name="ARG1">
+                    <block type="variables_get" id="Kt/NKYz0WOT@;qP0K0g2">
+                      <field name="VAR" id="|fcnNuy,nrDBA!D1+^5!">SofasID</field>
+                    </block>
+                  </value>
+                  <value name="ARG2">
+                    <block type="math_number" id="ES5Y^Wn*a@;TFN$$bju@">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id=",7j$2GOx]}Q_@wW.=T4I" x="590" y="410">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="a3Typ$75WP2)kD$}WDw@">
+          <field name="TEXT">Salon.Komody.prev</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="variables_set" id="ZDl:D,Ot;7Sr*HXQ~`9Z">
+          <field name="VAR" id="[br_Qk7dr3S,8ZL=Qn|H">DressersID</field>
+          <value name="VALUE">
+            <block type="procedures_callreturn" id="wu^699pa_05bOi`e|5J8">
+              <mutation name="changeFurniture">
+                <arg name="lista_Obiektow"></arg>
+                <arg name="aktualnie_wybrany_ID"></arg>
+                <arg name="wartość"></arg>
+              </mutation>
+              <value name="ARG0">
+                <block type="variables_get" id="K?SRm#t,QzL{la@,lsY6">
+                  <field name="VAR" id="S3,oeM5s=maWIS]m@|Tu">Dressers</field>
+                </block>
+              </value>
+              <value name="ARG1">
+                <block type="variables_get" id="7vCbT6d9?[@Fg[Vun*.a">
+                  <field name="VAR" id="[br_Qk7dr3S,8ZL=Qn|H">DressersID</field>
+                </block>
+              </value>
+              <value name="ARG2">
+                <block type="math_number" id="./*:qP2;8z0RO!Xh{dT9">
+                  <field name="NUM">-1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="Eq~ULZ/#s][c#n*qFTyY">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <shadow type="text" id="]0McRm-gC0#u$/dau/VZ">
+              <field name="TEXT">Salon.Komody.next</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="variables_set" id="Y%Zbgj]USy6CjgZ4|ngs">
+              <field name="VAR" id="[br_Qk7dr3S,8ZL=Qn|H">DressersID</field>
+              <value name="VALUE">
+                <block type="procedures_callreturn" id="~(%-o3q7FuoN`fcd%]uc">
+                  <mutation name="changeFurniture">
+                    <arg name="lista_Obiektow"></arg>
+                    <arg name="aktualnie_wybrany_ID"></arg>
+                    <arg name="wartość"></arg>
+                  </mutation>
+                  <value name="ARG0">
+                    <block type="variables_get" id="cTx9TV9d.X+olE2*]#2m">
+                      <field name="VAR" id="S3,oeM5s=maWIS]m@|Tu">Dressers</field>
+                    </block>
+                  </value>
+                  <value name="ARG1">
+                    <block type="variables_get" id=":H}$1n?VKUR`O}Yw2p%r">
+                      <field name="VAR" id="[br_Qk7dr3S,8ZL=Qn|H">DressersID</field>
+                    </block>
+                  </value>
+                  <value name="ARG2">
+                    <block type="math_number" id="+HhNf#rd$B:L!w+7zRb+">
                       <field name="NUM">1</field>
                     </block>
                   </value>

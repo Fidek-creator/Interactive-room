@@ -17,7 +17,14 @@
                   type: 'range',
                   min: 0,
                   max: 100,
-                  value: 50,
+                  value: 0,
+                },
+                {
+                  name: 'Szerokość',
+                  type: 'range',
+                  min: 0,
+                  max: 100,
+                  value: 0,
                 },
                 {
                   name: 'Kolor',
@@ -43,7 +50,7 @@
           ],
         },
         {
-          name: 'Narożnik',
+          name: 'Narożniki',
           variant: [
             {
               id: 0,
@@ -132,7 +139,7 @@
           ],
         },
         {
-          name: 'Stoły',
+          name: 'Stół',
           variant: [
             {
               id: 0,
@@ -201,7 +208,7 @@
           ]
         },
         {
-          name:"Komody",
+          name:"Komoda",
           variant:[
             {
               id: 0,

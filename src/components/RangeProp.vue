@@ -19,6 +19,7 @@
       :min="props.propDefinition.min"
       :max="props.propDefinition.max"
       v-model="props.propDefinition.value"
-      class="w-full h-2 bg-gray-300 rounded-lg cursor-pointer" />
+      class="w-full h-2 bg-gray-300 rounded-lg cursor-pointer"
+      />
   </section>
 </template>

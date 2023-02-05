@@ -57,7 +57,7 @@
         </svg>
       </button>
 
-      <span class="text-center cursor-default p-2">{{ props.furniture.name }} </span>
+      <span class="text-center cursor-pointer p-2" :id=" props.furniture.name">{{ props.furniture.name }} </span>
 
       <button
         @click="changeId(1)"

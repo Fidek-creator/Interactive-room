@@ -15,7 +15,6 @@
 </script>
 <template>
   <section v-show="modelValue == '' || modelValue == room.name">
-    
     <p
       :id="props.room.name == props.modelValue ? 'back' : props.room.name.toString().toLowerCase()"
       class="hover:bg-blue-700 rounded-full p-4 hover:text-gray-300 hover:scale-75 cursor-pointer"

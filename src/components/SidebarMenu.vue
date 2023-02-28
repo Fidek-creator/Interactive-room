@@ -225,7 +225,6 @@
     },
   ];
 
-  const a = ref(1);
   const selectedRoom = ref('');
 </script>
 
@@ -246,11 +245,7 @@
       class="text-center text-xl font-semibold text-gray-400">
       <Room v-model="selectedRoom" :room="room" />
     </div>
-    
   </div>
-  
-
-
 </template>
 
 <style></style>

@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
-import AppsGrid from './AppsGrid.vue'
+import App from './App.vue'
 
 import './assets/css/tailwind.css'
 
-createApp(AppsGrid).mount('#app')
+createApp(App).mount('#app')

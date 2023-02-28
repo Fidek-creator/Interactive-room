@@ -1,6 +1,5 @@
 <template>
   <div :id="containerId">
-    <!-- <button @click="reloadApp()">Reload App</button> -->
     <div
       :id="fsButtonId"
       class="fullscreen-button fullscreen-open"

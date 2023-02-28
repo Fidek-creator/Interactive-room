@@ -1,7 +1,7 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="20.142822265625" scrolly="0" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="570.95593175575" scrolly="5.684341886080802e-14" scale="0.6548623765145808"></tab>
-  <tab name="Lists" type="SecondaryTab" active="false" scrollx="-1603.1837016668974" scrolly="797.4289308819433" scale="0.8227024747918816">
+  <tab name="main" type="MainTab" active="false" scrollx="570.95593175575" scrolly="5.684341886080802e-14" scale="0.6548623765145808"></tab>
+  <tab name="Lists" type="SecondaryTab" active="true" scrollx="-1603.1837016668974" scrolly="797.4289308819433" scale="0.8227024747918816">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="rjNfWGwm3h4QP^MGC_m:">lista_Obiektow</variable>
       <variable id="V+}qttxPN4mX[2-f)EV7">Lodowki</variable>
@@ -2656,7 +2656,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="Functions_usage" type="SecondaryTab" active="false" scrollx="-73.86817932128895" scrolly="45.99999999999994" scale="1">
+  <tab name="Functions_usage" type="SecondaryTab" active="false" scrollx="-73.86817932128895" scrolly="-10" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="!.$GQl,pvI@?4xQyQl4e">LodowkaID</variable>
       <variable id="^OTG:1LNLv*Lm(?aZDDI">NaroznikID</variable>

@@ -13,7 +13,7 @@ This is my first big project where I have created a 3D model of a room along wit
 "Interactive-room" is a web application that allows users to interactively arrange the interior of a room. To create the room and furniture, I used Blender software. For designing the graphical user interface, I utilized the Vue.js framework and Tailwind CSS stylesheet. To program the interactions between the interface and the model, I used Verge3D tool. The project was a great opportunity for me to develop my skills in 3D modelling, web development, and programming. The application offers users a unique experience of designing their own interior, choosing the right furniture, and virtually walk on it. It was an exciting and challenging project, and I am proud of the final outcome.
 
 ## License
-Verge3D Tool is only for evaluation purposes
+Verge3D Tool is only for evaluation purposes. </br>
 For more information, visit: https://www.soft8soft.com/licensing/
 
 ## Demo
